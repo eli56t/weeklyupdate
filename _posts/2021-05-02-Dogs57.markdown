@@ -1,5 +1,0 @@
----
-layout: dogsupdate57
-date:  2021-05-02T18:47:04.587Z
-categories: Dog Updates
----
