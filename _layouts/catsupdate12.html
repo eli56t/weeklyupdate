@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Palatino, serif;
+  margin: 0px;
+}
+
+.header {
+  height: 100%;
+  margin: 15;
+  color: black;
+  padding: 5;
+  vertical-align: middle;
+  align: center;
+  
+}
+
+
+
+.grid {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+  grid-auto-rows: 20px;
+}
+@media(max-width:540px){
+  .grid {
+     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Non-grid specific CSS */  
+body {
+  margin: 10px;
+  color: #374046;
+  
+  font-size: 1.15em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+}
+
+.item {
+  color: black;
+  background-color: #cccccc;
+  border-radius: 15px 15px 15px 15px;
+
+}
+
+.photothumb{
+  width: 100%;
+ position: center;
+}
+
+.title {
+  padding: 10px;
+  opacity: .7;
+ }
+
+.title h3{
+  font-size: auto;
+  color: black;
+  font-family: Palatino, serif;
+}
+
+.Available .title{
+  background-color: #f6f67e;
+ border-radius: 15px 15px 0px 0px;
+ text-align: center;
+}
+
+.Hold .title{
+  background-color: #f67e7e;
+  border-radius: 15px 15px 0px 0px;
+  text-align: center;
+}
+
+.Pending .title{
+  background-color: #f6ba7e;
+  border-radius: 15px 15px 0px 0px;
+  text-align: center;
+}
+.Adopted .title{
+  background-color: #7ef67e;
+  border-radius: 15px 15px 0px 0px;
+  text-align: center;
+}
+.Transferred .title{
+  background-color: #7e7ef6;
+ border-radius: 15px 15px 0px 0px;
+ text-align: center;
+}
+
+.desc{
+  padding: 10px 10px 5px 10px;
+  
+}
+
+.desc img{
+  width: 50%;
+  margin: 0 10px 10px 0;
+  float: left;
+}
+
+.desc p{
+  margin-bottom: 5px;
+  font-family: Palatino, serif;
+  text-align: center;
+}
+
+
+ .background-image::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(10px); /* apply the blur */
+  backdrop-filter: blur(1px);         /* apply the blur */
+  pointer-events: none; /* make the pseudo class click-through */
+}
+
+.background-image {
+ min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: no-repeat center center;
+  background-image: url("https://wallpaper.dog/large/5448795.jpg");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  z-index: -1;
+ }
+
+
+</style>
+</head>
+<div class="background-image"></div>
+<header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/weeklyupdate/index">Back</a><nav class="site-nav">
+<div class="header" align="center"><h1>Weekly Cat Update</h1><p>05/02/2021</p></div>
+
+
+<!-- MAIN (Center website) -->
+<body>
+        
+<!-- Portfolio Gallery Grid -->
+<div class="grid">
+
+
+
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>G20-043 *Ava (Foster Home)</h3>
+</div>
+<img class="photothumb" src=""
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Available</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 1yr7mos</p>
+</div>
+</div>
+</div>
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>G20-147 *Jo (Forest Pet Care)</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16243/16243718/77043587_500x508.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Available</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 7mos</p>
+</div>
+</div>
+</div>
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>Courtesy *Mr Kitty & Lil Momma</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16199/16199740/75126031_500x375.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Available</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 1yr4mos</p>
+</div>
+</div>
+</div>
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>G21-005 *Ember (Foster Home)</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16409/16409835/76393856_500x666.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Available</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 5mos</p>
+</div>
+</div>
+</div>
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>G21-008 *Dr. Bangs ~ Little Women Litter: pre-adoption</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16412/16412162/78004373_500x574.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Available</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 4mos</p>
+</div>
+</div>
+</div>
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>G21-015 *Alani</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16442/16442838/76543490_500x499.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Available</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 6mos</p>
+</div>
+</div>
+</div>
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>G21-016 *Queen Sarah</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16471/16471150/78027146_500x500.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Available</p>
+<p>Breed: Domestic Long Hair</p>
+<p>Age: 3yrs1mo</p>
+</div>
+</div>
+</div>
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>G21-024 *Haley</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16561/16561606/78185252_500x497.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Available</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 2mos</p>
+</div>
+</div>
+</div>
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>G21-025 *Cassia (Foster Home)</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16577/16577859/77487996_500x666.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Available</p>
+<p>Breed: Domestic Medium Hair</p>
+<p>Age: 2yrs3mos</p>
+</div>
+</div>
+</div>
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>CP21-024 *Bella</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16597/16597672/77436973_500x499.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Available</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 10yrs1mo</p>
+</div>
+</div>
+</div>
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>CP21-031 *Sofia</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16639/16639382/77424243_500x561.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Available</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 8yrs1mo</p>
+</div>
+</div>
+</div>
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>CP21-032 *Purssia</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16639/16639387/77424253_500x377.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Available</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 6yrs1mo</p>
+</div>
+</div>
+</div>
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>CP21-033 *Chloe</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16639/16639389/77424242_500x560.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Available</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 6yrs1mo</p>
+</div>
+</div>
+</div>
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>CP21-035 *Pumpkin</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16647/16647756/77471271_500x581.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Available</p>
+<p>Breed: Domestic Medium Hair</p>
+<p>Age: 1yr6mos</p>
+</div>
+</div>
+</div>
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>G21-046 *Stella Artois</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16671/16671620/77695279_500x500.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Available</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 3mos</p>
+</div>
+</div>
+</div>
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>CP21-034 *Butch</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16735/16735034/78252944_500x608.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Available</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 3yrs11mos</p>
+</div>
+</div>
+</div>
+
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>G20-125 *Stella (Foster Home)</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16171/16171264/75072769_500x711.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Hold</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 9mos</p>
+</div>
+</div>
+</div>
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>G20-117 *Izzy (Forest Pet Care)</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16166/16166626/75090987_500x666.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Hold</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 11mos</p>
+</div>
+</div>
+</div>
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>G20-130 *Fozzy</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16199/16199881/75126630_500x375.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Hold</p>
+<p>Breed: Domestic Medium Hair</p>
+<p>Age: 7mos</p>
+</div>
+</div>
+</div>
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>G20-135 *Purrista (Foster Home)</h3>
+</div>
+<img class="photothumb" src=""
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Hold</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 1yr6mos</p>
+</div>
+</div>
+</div>
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>G19-079 *Cylinder (Foster Home)</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/14434/14434802/69731197_500x666.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Hold</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 2yrs0mos</p>
+</div>
+</div>
+</div>
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>G20-127 *Pippi Longstocking</h3>
+</div>
+<img class="photothumb" src=""
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Hold</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 7mos</p>
+</div>
+</div>
+</div>
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>G21- *Tripod</h3>
+</div>
+<img class="photothumb" src=""
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Hold</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 10yrs1mo</p>
+</div>
+</div>
+</div>
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>G21-027 *Spice Kittens - Dill</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16591/16591485/77258441_500x499.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Hold</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 2mos</p>
+</div>
+</div>
+</div>
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>G21-026 *Spice Kittens - Basil</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16591/16591486/77258437_500x499.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Hold</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 3mos</p>
+</div>
+</div>
+</div>
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>G21-028 *Spice Kittens - Minty</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16591/16591488/78184715_500x666.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Hold</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 2mos</p>
+</div>
+</div>
+</div>
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>G21-029 *Spice Kittens - Oregano</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16591/16591489/77258434_500x499.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Hold</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 3mos</p>
+</div>
+</div>
+</div>
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>G21-030 *Spice Kittens - Parsley</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16591/16591490/77258436_500x499.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Hold</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 2mos</p>
+</div>
+</div>
+</div>
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>CP21- *Bella</h3>
+</div>
+<img class="photothumb" src=""
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Hold</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 10yrs1mo</p>
+</div>
+</div>
+</div>
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>G21-045 *Charlotte</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16666/16666110/77692650_500x576.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Hold</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 4yrs2mos</p>
+</div>
+</div>
+</div>
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>G21-065 *Easter Mama</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16695/16695011/78345708_500x666.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Hold</p>
+<p>Breed: Domestic Medium Hair</p>
+<p>Age: 3yrs0mos</p>
+</div>
+</div>
+</div>
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>G21-073 *Mama Bean</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16698/16698418/78275815_500x939.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Hold</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 1yr0mos</p>
+</div>
+</div>
+</div>
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>G21-074 *Vienna (Beanie Weenie)</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16698/16698434/78275808_500x683.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Hold</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 24 days</p>
+</div>
+</div>
+</div>
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>G21-075 *Houdini Beanie</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16698/16698456/78275811_500x375.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Hold</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 24 days</p>
+</div>
+</div>
+</div>
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>G21-076 *Hallo-beanie</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16698/16698457/78275809_500x538.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Hold</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 24 days</p>
+</div>
+</div>
+</div>
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>G21-077 *Baby Bean #4</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16737/16737581/78375422_500x787.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Hold</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 29 days</p>
+</div>
+</div>
+</div>
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>G21-066 *Jelly Bean</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16745/16745984/78343709_500x590.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Hold</p>
+<p>Breed: Domestic Medium Hair</p>
+<p>Age: 28 days</p>
+</div>
+</div>
+</div>
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>G21-067 *Peeps</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16745/16745986/78343713_500x568.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Hold</p>
+<p>Breed: Domestic Medium Hair</p>
+<p>Age: 28 days</p>
+</div>
+</div>
+</div>
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>G21-068 *Truffles</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16745/16745987/78343712_500x615.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Hold</p>
+<p>Breed: Domestic Medium Hair</p>
+<p>Age: 28 days</p>
+</div>
+</div>
+</div>
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>G21-081 Black and white kitten from Appomattox</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16745/16745983/78345698_500x666.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Hold</p>
+<p>Breed: Domestic Medium Hair</p>
+<p>Age: 20 days</p>
+</div>
+</div>
+</div>
+
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G20-124 *Lady Jane (Foster Home)</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16171/16171276/76915816_500x750.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 2yrs1mo</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G20-156 *Avaon - Amherst (Petsense)</h3>
+</div>
+<img class="photothumb" src=""
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 11mos</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G20-041 *Moscato (Foster Home) (Pending)</h3>
+</div>
+<img class="photothumb" src=""
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Long Hair</p>
+<p>Age: 1yr1mo</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G20-101 *Bowie</h3>
+</div>
+<img class="photothumb" src=""
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 1yr1mo</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G20-165 *Talulah (Pet Sense)</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16295/16295237/75666122_500x657.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 11mos</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G20-141 *Adrianne (Foster Home)</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16243/16243712/75421523_404x490.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Long Hair</p>
+<p>Age: 9mos</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G20-145 *Freya</h3>
+</div>
+<img class="photothumb" src=""
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 7mos</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G20-166 *Leela (Pet Sense)</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16295/16295235/75666110_500x633.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 11mos</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G20-091 *Simba</h3>
+</div>
+<img class="photothumb" src=""
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 4yrs1mo</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G20-144 *Felix</h3>
+</div>
+<img class="photothumb" src=""
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 7mos</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G20-157 *Elias - Amherst (Petsense)</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16251/16251891/75408601_500x712.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 9mos</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G20-170 *Truffles (Foster Home)</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16328/16328640/75844633_500x606.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 5mos</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G20-158 *Lukas - Amherst (Petsense)</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16251/16251892/75408626_500x741.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 9mos</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G20-146 *Kam (Forest Pet Care)</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16243/16243717/75786737_500x375.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 7mos</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G20-180 *Goldie</h3>
+</div>
+<img class="photothumb" src=""
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 6mos</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G21-017 *Shiloh</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16494/16494595/78171449_500x500.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 10mos</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>CP21-016 *Baby Kitty</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16548/16548003/76932444_500x375.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 6mos</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G21-023 *Chase</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16561/16561603/77845120_500x500.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Medium Hair</p>
+<p>Age: 2mos</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G21-018 *Baby Kitty</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16548/16548003/76932444_500x375.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 6mos</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G21-037 *Chica</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16615/16615917/77460505_500x500.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 1mo</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G21-039 *Hobbes</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16615/16615924/77808926_500x500.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 1mo</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G21-041 *Liebling</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16615/16615927/78001868_500x666.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 1mo</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G21-042 *Pixel</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16652/16652151/77646995_500x579.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 1yr1mo</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G21-047 *Samuel Adams</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16671/16671623/77695283_500x500.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Long Hair</p>
+<p>Age: 3mos</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G21-048 *Beck</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16671/16671624/77695289_500x500.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 3mos</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G21-049 *Guinness</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16671/16671625/77695292_500x500.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 3mos</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G21-064 *Spidergirl</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16716/16716669/78093346_500x375.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 2mos</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G21-063 *Kia</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16716/16716670/78093349_500x375.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 2mos</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G21-078 *Natty (Beer Crew 2)</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16734/16734730/78250778_500x316.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Long Hair</p>
+<p>Age: 1mo</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G21-079 *Miller (Beer Crew 2)</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16734/16734736/78250808_500x359.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Long Hair</p>
+<p>Age: 1mo</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G21-080 *Pabst (Beer Crew 2)</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16734/16734742/78250852_500x591.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Long Hair</p>
+<p>Age: 1mo</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>CP21-042 *Kiwi</h3>
+</div>
+<img class="photothumb" src=""
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 9yrs11mos</p>
+</div>
+</div>
+</div>
+
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G21-022 *Charley</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16561/16561600/77676137_500x500.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Medium Hair</p>
+<p>Age: 2mos</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G21-038 *Calvin</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16615/16615921/78389936_500x500.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 1mo</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>G21-040 *Ria</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16615/16615925/78389937_500x499.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 1mo</p>
+</div>
+</div>
+</div>
+
+<div class="item Transferred">
+<div class="content">
+<div class="title">
+<h3>CP21-013 *Friend</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16544/16544575/76916360_241x329.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Transferred</p>
+<p>Breed: Domestic Short Hair</p>
+<p>Age: 6yrs2mos</p>
+</div>
+</div>
+</div>
+
+
+<!-- END GRID -->
+</div>
+
+<script>
+function resizeGridItem(item){
+  grid = document.getElementsByClassName("grid")[0];
+  rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+  rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
+  rowSpan = Math.ceil((item.querySelector('.content').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
+    item.style.gridRowEnd = "span "+rowSpan;
+}
+
+function resizeAllGridItems(){
+  allItems = document.getElementsByClassName("item");
+  for(x=0;x<allItems.length;x++){
+    resizeGridItem(allItems[x]);
+  }
+}
+
+function resizeInstance(instance){
+  item = instance.elements[0];
+  resizeGridItem(item);
+}
+
+window.onload = resizeAllGridItems();
+window.addEventListener("resize", resizeAllGridItems);
+
+allItems = document.getElementsByClassName("item");
+for(x=0;x<allItems.length;x++){
+  imagesLoaded( allItems[x], resizeInstance);
+}
+</script>
+
+</body>
+</html>
