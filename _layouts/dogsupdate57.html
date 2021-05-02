@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Palatino, serif;
+  margin: 0px;
+}
+
+.header {
+  height: 100%;
+  margin: 15;
+  color: black;
+  padding: 5;
+  vertical-align: middle;
+  align: center;
+  
+}
+
+
+
+.grid {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+  grid-auto-rows: 20px;
+}
+@media(max-width:540px){
+  .grid {
+     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Non-grid specific CSS */  
+body {
+  margin: 10px;
+  color: #374046;
+  
+  font-size: 1.15em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+}
+
+.item {
+  color: black;
+  background-color: #cccccc;
+  border-radius: 15px 15px 15px 15px;
+
+}
+
+.photothumb{
+  width: 100%;
+ position: center;
+}
+
+.title {
+  padding: 10px;
+  opacity: .7;
+ }
+
+.title h3{
+  font-size: auto;
+  color: black;
+  font-family: Palatino, serif;
+}
+
+.Available .title{
+  background-color: #f6f67e;
+ border-radius: 15px 15px 0px 0px;
+ text-align: center;
+}
+
+.Hold .title{
+  background-color: #f67e7e;
+  border-radius: 15px 15px 0px 0px;
+  text-align: center;
+}
+
+.Pending .title{
+  background-color: #f6ba7e;
+  border-radius: 15px 15px 0px 0px;
+  text-align: center;
+}
+.Adopted .title{
+  background-color: #7ef67e;
+  border-radius: 15px 15px 0px 0px;
+  text-align: center;
+}
+.Transferred .title{
+  background-color: #7e7ef6;
+ border-radius: 15px 15px 0px 0px;
+ text-align: center;
+}
+
+.desc{
+  padding: 10px 10px 5px 10px;
+  
+}
+
+.desc img{
+  width: 50%;
+  margin: 0 10px 10px 0;
+  float: left;
+}
+
+.desc p{
+  margin-bottom: 5px;
+  font-family: Palatino, serif;
+  text-align: center;
+}
+
+
+ .background-image::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(10px); /* apply the blur */
+  backdrop-filter: blur(1px);         /* apply the blur */
+  pointer-events: none; /* make the pseudo class click-through */
+}
+
+.background-image {
+ min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: no-repeat center center;
+  background-image: url("https://wallpaper.dog/large/5448795.jpg");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  z-index: -1;
+ }
+
+
+</style>
+</head>
+<div class="background-image"></div>
+<div class="wrapper"><a class="site-title" rel="author" href="/weeklyupdate/index">Back</a><nav class="site-nav">
+<div class="header" align="center"><h1>Weekly Dog Update</h1><p>05/02/2021</p></div>
+
+
+<!-- MAIN (Center website) -->
+<body>
+
+<!-- Portfolio Gallery Grid -->
+<div class="grid">
+
+
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>L20-301 Venus</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16307/16307598/77243253_500x502.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Available</p>
+<p>Breed: Yellow Labrador Retriever / Staffordshire Bull Terrier</p>
+<p>Age: 7mos</p>
+</div>
+</div>
+</div>
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>L20-326 Nutmeg</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16277/16277684/78052133_500x594.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Available</p>
+<p>Breed: Labrador Retriever</p>
+<p>Age: 2yrs9mos</p>
+</div>
+</div>
+</div>
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>CP21-002 Jessi & Chester</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16446/16446522/76480902_500x500.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Available</p>
+<p>Breed: Labrador Retriever / Rottweiler</p>
+<p>Age: 5yrs3mos</p>
+</div>
+</div>
+</div>
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>CP21-009 Max</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16526/16526673/76822694_500x666.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Available</p>
+<p>Breed: Rat Terrier</p>
+<p>Age: 13yrs2mos</p>
+</div>
+</div>
+</div>
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>CP21-008 Indiana</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16526/16526675/76822698_500x666.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Available</p>
+<p>Breed: Hound / Shepherd</p>
+<p>Age: 5yrs2mos</p>
+</div>
+</div>
+</div>
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>CP21-011 Annabelle</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16544/16544170/76916343_500x500.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Available</p>
+<p>Breed: Black Mouth Cur</p>
+<p>Age: 4yrs3mos</p>
+</div>
+</div>
+</div>
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>CP21-018 Allister</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16559/16559656/77002060_451x896.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Available</p>
+<p>Breed: American Pit Bull Terrier</p>
+<p>Age: 3yrs2mos</p>
+</div>
+</div>
+</div>
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>CP21-036 Eli</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16671/16671485/77674401_444x960.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Available</p>
+<p>Breed: Pit Bull Terrier</p>
+<p>Age: 3yrs6mos</p>
+</div>
+</div>
+</div>
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>CP21-037 Moo Moo</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16689/16689835/77848528_500x506.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Available</p>
+<p>Breed: American Pit Bull Terrier</p>
+<p>Age: 3yrs2mos</p>
+</div>
+</div>
+</div>
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>CP21-038 Milo</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16704/16704460/77982185_256x321.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Available</p>
+<p>Breed: </p>
+<p>Age: 1yr4mos</p>
+</div>
+</div>
+</div>
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>CP21-039 Finnley</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16715/16715436/78077497_500x666.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Available</p>
+<p>Breed: Corgi</p>
+<p>Age: 1yr6mos</p>
+</div>
+</div>
+</div>
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>L21-048 Phoenix</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16737/16737193/78319970_500x743.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Available</p>
+<p>Breed: German Shepherd Dog</p>
+<p>Age: 12yrs1mo</p>
+</div>
+</div>
+</div>
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>L21-049 Pearl</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16745/16745055/78329855_500x933.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Available</p>
+<p>Breed: American Staffordshire Terrier / Beagle</p>
+<p>Age: 3mos</p>
+</div>
+</div>
+</div>
+
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>L20-307 Xena</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16224/16224375/77517029_500x494.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Hold</p>
+<p>Breed: Chihuahua</p>
+<p>Age: 2yrs5mos</p>
+</div>
+</div>
+</div>
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>CP21-022 Cody</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16597/16597671/77241878_375x495.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Hold</p>
+<p>Breed: Beagle</p>
+<p>Age: 6yrs6mos</p>
+</div>
+</div>
+</div>
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>L21-033 Max & Jax</h3>
+</div>
+<img class="photothumb" src=""
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Hold</p>
+<p>Breed: Great Dane / German Shepherd Dog</p>
+<p>Age: 2yrs1mo</p>
+</div>
+</div>
+</div>
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>CP21-043 Lilith & Ruby</h3>
+</div>
+<img class="photothumb" src=""
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Hold</p>
+<p>Breed: Border Collie / Boxer</p>
+<p>Age: 3yrs0mos</p>
+</div>
+</div>
+</div>
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>CP21-044 Sampson</h3>
+</div>
+<img class="photothumb" src=""
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Hold</p>
+<p>Breed: Australian Shepherd / Labrador Retriever</p>
+<p>Age: 10yrs11mos</p>
+</div>
+</div>
+</div>
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>NA Blake</h3>
+</div>
+<img class="photothumb" src=""
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Hold</p>
+<p>Breed: Australian Cattle Dog/Blue Heeler / Labrador Retriever</p>
+<p>Age: 4yrs11mos</p>
+</div>
+</div>
+</div>
+
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>L21-007 Bo</h3>
+</div>
+<img class="photothumb" src=""
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Dachshund</p>
+<p>Age: 6yrs3mos</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>L21-009 Pumpkin</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16420/16420457/76350490_500x375.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Boston Terrier</p>
+<p>Age: 13yrs3mos</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>L21-010 Murphy</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16439/16439458/76437870_500x664.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Basset Hound / Weimaraner</p>
+<p>Age: 1yr3mos</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>L21-022 Toby</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16604/16604229/77356614_500x750.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Jack Russell Terrier</p>
+<p>Age: 9yrs7mos</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>L21-032 Jax & Max</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16655/16655423/77535909_500x789.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Great Dane / German Shepherd Dog</p>
+<p>Age: 2yrs1mo</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>L21-042 Yisi</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16681/16681094/77777473_500x375.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Golden Retriever</p>
+<p>Age: 5yrs0mos</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>L21-043 Reggie</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16693/16693841/78097316_500x375.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Schnauzer</p>
+<p>Age: 4yrs8mos</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>CP21-041 Kruger</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16717/16717338/78096587_500x543.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Cane Corso Mastiff</p>
+<p>Age: 2yrs0mos</p>
+</div>
+</div>
+</div>
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>CP21-040 Kikkoman</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16717/16717779/78098786_500x993.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Pending</p>
+<p>Breed: Shiba Inu</p>
+<p>Age: 4yrs0mos</p>
+</div>
+</div>
+</div>
+
+<div class="item Adopted">
+<div class="content">
+<div class="title">
+<h3>L21-046 Carpenter</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16719/16719472/78146645_500x747.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Adopted</p>
+<p>Breed: </p>
+<p>Age: 1mo</p>
+</div>
+</div>
+</div>
+<div class="item Adopted">
+<div class="content">
+<div class="title">
+<h3>L21-047 Bumble</h3>
+</div>
+<img class="photothumb" src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16719/16719476/78146641_500x666.jpg"
+alt="Not Found"
+onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_1192200144255101_6996564427411554304_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vQqWU1KC5fUAX89NS2F&_nc_ht=scontent.fric1-1.fna&oh=6be42e649b68f29dc3f6ba610a866b69&oe=60A7CE87">
+<div class="desc">
+<p>Status: Adopted</p>
+<p>Breed: </p>
+<p>Age: 1mo</p>
+</div>
+</div>
+</div>
+
+
+
+
+<!-- END GRID -->
+</div>
+
+<script>
+function resizeGridItem(item){
+  grid = document.getElementsByClassName("grid")[0];
+  rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+  rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
+  rowSpan = Math.ceil((item.querySelector('.content').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
+    item.style.gridRowEnd = "span "+rowSpan;
+}
+
+function resizeAllGridItems(){
+  allItems = document.getElementsByClassName("item");
+  for(x=0;x<allItems.length;x++){
+    resizeGridItem(allItems[x]);
+  }
+}
+
+function resizeInstance(instance){
+  item = instance.elements[0];
+  resizeGridItem(item);
+}
+
+window.onload = resizeAllGridItems();
+window.addEventListener("resize", resizeAllGridItems);
+
+allItems = document.getElementsByClassName("item");
+for(x=0;x<allItems.length;x++){
+  imagesLoaded( allItems[x], resizeInstance);
+}
+</script>
+
+</body>
+</html>
