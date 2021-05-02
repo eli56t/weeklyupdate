@@ -1,5 +1,0 @@
----
-layout: catsupdate11
-date:  2021-05-02T18:36:28.544Z
-categories: Dog Updates
----
