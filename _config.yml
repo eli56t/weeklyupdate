@@ -28,10 +28,9 @@ url: "eli56t.github.io" # the base hostname & protocol for your site, e.g. http:
 github_username:  eli56t
 
 # Build settings
-theme: minima
+theme: 
 plugins:
   - jekyll-feed
-
   
 # Exclude from processing.
 # The following items will not be processed, by default.
