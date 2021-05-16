@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--
+        Strongly Typed by HTML5 UP
+        html5up.net | @ajlkn
+        Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+  <title>CVRR</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel='stylesheet' href='css/style.css'>
+</head>
+<body class="left-sidebar is-preload">
+  <div id="page-wrapper">
+    <!-- Header -->
+    <section id="header">
+      <div class="container">
+        <!-- Logo -->
+        <h1 id="logo"><a href="index.html">Weekly Update</a></h1>
+        <h2>CVRR</h2><!-- Nav -->
+        <nav id="nav">
+          <ul>
+            <li><a class="icon solid fa-home" href="index.html"><span>Home</span></a></li>
+            <li>
+              <div style="margin-left: 2em">
+                <a>Past Updates</a> 
+                <!--
+				  <ul><a>01-13-2020</a>
+                                                                                                
+                  <li><a href="#">Dogs</a></li>
+                   <li><a href="#">Cats</a></li>
+                   </ul>
+                    <ul><a>01-13-2020</a>
+                    <li><a href="#">Dogs</a></li>
+                    <li><a href="#">Cats</a></li>
+                     </ul>
+                   <ul><a>01-13-2020</a>
+                                                                                                
+                    <li><a href="#">Dogs</a></li>
+                    <li><a href="#">Cats</a></li>
+                    </ul>
+                    <ul><a>01-13-2020</a>
+                   <li><a href="#">Dogs</a></li>
+                  <li><a href="#">Cats</a></li>
+                 </ul>
+                 -->
+                 
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section><!-- Main -->
+    <section id="main">
+      <div class="container">
+        <!-- Sidebar --><!-- Excerpts -->
+        <section>
+          <ul class="divided">
+            <!-- Excerpt -->
+            <li>
+              <article class="box excerpt">
+                <header>
+                  <span class="date">May 9 2021</span>
+                </header>
+                <div class="rowA">
+                  <div class="columnA">
+                    <div style="text-align:center">
+                      <a href="layouts/catsupdate15.html"><i class="fas fa-cat"  style="font-size:70px;color:#666699;"></i></a>
+                    </div>
+                  </div>
+                  <div class="columnA">
+                    <div style="text-align:center">
+                      <a href="layouts/dogsupdate59.html"><i class="fas fa-dog" style="font-size:70px;color:#009999;"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              </li>
+              
+              <!-- Excerpt -->
+            <li>
+              <article class="box excerpt">
+                <header>
+                  <span class="date">May 2 2021</span>
+                </header>
+                <div class="rowA">
+                  <div class="columnA">
+                    <div style="text-align:center">
+                      <a href="layouts/catsupdate14.html"><i class="fas fa-cat"  style="font-size:70px;color:#666699;"></i></a>
+                    </div>
+                  </div>
+                  <div class="columnA">
+                    <div style="text-align:center">
+                      <a href="layouts/dogsupdate52.html"><i class="fas fa-dog" style="font-size:70px;color:#009999;"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              </li>
+              
+          </ul>
+        </section>
+      </div><!-- Content -->
+     
+    </section>
+  </div><!-- Footer -->
+  
+      
+    <div id="copyright">
+      <ul class="links">
+        <li> All rights reserved.</li>
+        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+      </ul>
+    </div>
+  </section><!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script> 
+  <script src="assets/js/jquery.dropotron.min.js"></script> 
+  <script src="assets/js/browser.min.js"></script> 
+  <script src="assets/js/breakpoints.min.js"></script> 
+  <script src="assets/js/util.js"></script> 
+  <script src="assets/js/main.js"></script>
+  <script src="https://kit.fontawesome.com/4e0f85110e.js" crossorigin="anonymous"></script>
+</body>
+</html>
