@@ -6,4 +6,4 @@ $('.image_cover').each(function(){
     }else{
         $(this).addClass('potrait');
    }
-})
+});
