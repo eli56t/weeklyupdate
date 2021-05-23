@@ -7,8 +7,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+html, body, div, span, applet, object, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
@@ -50,7 +49,26 @@ menu, nav, section { display: block; }
 	 by Chris Coyier
 	 http://css-tricks.com
 */
+.iframe-container {
+  
+  position: relative;
+}
+.cover {
+  position: absolute;
+top: 0;
+bottom 0;
+left: 0;
+right: 0;
+}
 
+.iframe {
+   border: 0;
+   height: 533px;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
 
 body {
 	line-height: 1;
