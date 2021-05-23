@@ -40,8 +40,6 @@ body {
 font-family: 'Arvo';
   margin: 0px;
   color: #374046;
-  
-  
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 
@@ -58,10 +56,6 @@ font-family: 'Arvo';
    
 }
 
-.photothumb{
-  width: 100%;
- position: center;
-}
 
 
 .title {
@@ -108,10 +102,12 @@ font-family: 'Arvo';
 
 }
 
-.desc img{
-  width: 50%;
-  margin: 0 10px 10px 0;
-  float: left;
+img.rounded {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 160px;
+  width: 160px;
+  padding: 5px;
 }
 
 .desc p{
@@ -131,23 +127,9 @@ font-family: 'Arvo';
 			font-size: auto;
 			padding: 10px;
 		}
-		.company-header-avatar{
-    width: 100%;
-    height: auto;
 
-    -webkit-background-clip: padding-box;
 
-    -moz-background-clip: padding;
-    
-    background-clip: padding-box;
 
-    
-}
-.landscape .company-header-avatar{ width: auto;
-    height: 100%;}
-.potrait .company-header-avatar{ width: 100%;
-    height: auto;}
-.image_cover{ width: 100%; height: 165px; object-fit: contain; border-radius:50%;  overflow:hidden;  padding: 0px;}
 
 /* Style the navbar */
 #navbar {
@@ -167,22 +149,9 @@ background: #444;
  
   }
 
-/* Page content */
-.content {
-  
-}
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
-}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -234,37 +203,7 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block;
 }
- .background-im:before {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  -webkit-backdrop-filter: blur(0px); /* apply the blur */
-  backdrop-filter: blur(0px);         /* apply the blur */
-  pointer-events: none; /* make the pseudo class click-through */
-}
 
-.background-image {
- min-height: 100%;
-  min-width: 100%;
-	
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-	
-  /* Set up positioning */
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: no-repeat center center;
-  background-im url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFNoKwtUMxRvnT-scursywUt2hFUGRvy-MgA&usqp=CAU");
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  z-index: -1;
- }
 </style>
 </head>
 
@@ -1442,37 +1381,10 @@ onerror=this.src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/32597040_11
 
 
 <!-- END GRID -->
+
+<!-- END GRID -->
 </div>
 
-<script>
-function resizeGridItem(item){
-  grid = document.getElementsByClassName("grid")[0];
-  rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
-  rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
-  rowSpan = Math.ceil((item.querySelector('.content').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
-    item.style.gridRowEnd = "span "+rowSpan;
-}
-
-function resizeAllGridItems(){
-  allItems = document.getElementsByClassName("item");
-  for(x=0;x<allItems.length;x++){
-    resizeGridItem(allItems[x]);
-  }
-}
-
-function resizeInstance(instance){
-  item = instance.elements[0];
-  resizeGridItem(item);
-}
-
-window.onload = resizeAllGridItems();
-window.addEventListener("resize", resizeAllGridItems);
-
-allItems = document.getElementsByClassName("item");
-for(x=0;x<allItems.length;x++){
-  imagesLoaded( allItems[x], resizeInstance);
-}
-</script>
-
+<script src="https://kit.fontawesome.com/4e0f85110e.js" crossorigin="anonymous"></script>
 </body>
 </html>
