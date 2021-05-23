@@ -3,6 +3,16 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script language="JavaScript" type="text/javascript" src="images/avatar.js"></script>
+<script>$('.image_cover').each(function() {
+  const imageWidth = $().find('img').width();
+  const imageheight = $().find('img').height();
+  if (imageWidth > imageheight) {
+    $().addClass('landscape');
+  } else {
+    $().addClass('potrait');
+  }
+});
+</script>
 <style>
 
 
@@ -527,7 +537,7 @@ onerror=this.src="images/altphoto.jpg">
 <div class="image_cover"><img class="photothumb" src=""
 alt="Not Found"
 onerror=this.src="images/altphoto.jpg">
->
+
 </div>
 <div class="desc">
 <p>Australian Cattle Dog/Blue Heeler / Labrador Retriever</p>
