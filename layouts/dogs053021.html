@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+
+* {
+  box-sizing: border-box;
+  font-family: Palatino, serif;
+  margin: 0px;
+}
+
+.header {
+  height: 100%;
+  margin: 15;
+  color: black;
+  padding: 5;
+  vertical-align: middle;
+  align: center;
+  
+}
+
+
+
+.grid {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+  padding: 10px;
+}
+@media(max-width:540px){
+  .grid {
+     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Non-grid specific CSS */  
+body {
+font-family: 'Arvo';
+  margin: 0px;
+  color: #374046;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+}
+
+.item {
+  color: black;
+  text-align: center;
+  border-style: groove;
+  border-color: #e6e6e6;
+  border-radius: 15px 15px 15px 15px;
+   background-color: #f2f2f2;
+   box-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.4);
+   
+}
+
+
+
+.title {
+  padding: 10px;
+  
+ }
+
+.title h3{
+  font-size: auto;
+  color: black;
+  font-family: Palatino, serif;
+}
+
+.Available .title{
+  background-color: #f6f67e;
+ border-radius: 15px 15px 0px 0px;
+ text-align: center;
+}
+
+.Hold .title{
+  background-color: #f67e7e;
+  border-radius: 15px 15px 0px 0px;
+  text-align: center;
+}
+
+.Pending .title{
+  background-color: #f6ba7e;
+  border-radius: 15px 15px 0px 0px;
+  text-align: center;
+}
+.Adopted .title{
+  background-color: #7ef67e;
+  border-radius: 15px 15px 0px 0px;
+  text-align: center;
+}
+.Transferred .title{
+  background-color: #7e7ef6;
+ border-radius: 15px 15px 0px 0px;
+ text-align: center;
+}
+
+.desc{
+  padding: 10px 10px 5px 10px;
+
+}
+
+img.rounded {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 160px;
+  width: 160px;
+  padding: 5px;
+}
+
+.desc p{
+  margin-bottom: 5px;
+  font-family: Palatino, serif;
+  text-align: center;
+}
+
+
+
+
+	logo {
+			font-family: 'Arvo';
+			font-weight: 700;
+			color: black;
+			text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
+			font-size: auto;
+			padding: 10px;
+		}
+
+
+
+
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+background: #444;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+ font-family: 'Arvo';
+ 
+  }
+
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  color: white;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+</style>
+</head>
+
+<div id="navbar">
+  <a href="/weeklyupdate/index">Home</a>
+<li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Status Colors</a>
+    <div class="dropdown-content">
+    <p><i class="fas fa-paw" style="font-size:20px;color:yellow;vertical-align: middle;padding: 5px;"></i>Available</p>
+  <p><i class="fas fa-paw" style="font-size:20px;color:red;vertical-align:middle;padding: 5px;"></i>Hold</p>
+  <p><i class="fas fa-paw" style="font-size:20px;color:orange;vertical-align:middle;padding: 5px;"></i>Pending</p>
+  <p><i class="fas fa-paw" style="font-size:20px;color:green;vertical-align:middle;padding: 5px;"></i>Adopted</p>
+  <p><i class="fas fa-paw" style="font-size:20px;color:purple;vertical-align:middle;padding: 5px;"></i>Courtesy Adoption</p>
+  </div>
+</div>
+</div>
+
+
+
+ 
+<!-- MAIN (Center website) -->
+<body>
+ <logo>
+  <a style="color:#ed786a;">For the Week of: 05/30/2021</a>
+  </logo>
+<!-- Portfolio Gallery Grid -->
+<div class="grid">
+
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>CP21-055 Bristol</h3>
+</div>
+<img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16825/16825714/78967966_320x240.jpg"
+onerror="this.onerror=null; this.src='images/altphoto.jpg';" class="rounded">
+<div class="desc">
+<p>German Shorthaired Pointer</p>
+<p>7 years 0 months</p>
+</div>
+</div>
+</div>
+
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>CP21-053 Tucker (located in Roanoke, VA)</h3>
+</div>
+<img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16798/16798290/78787801_500x269.jpg"
+onerror="this.onerror=null; this.src='images/altphoto.jpg';" class="rounded">
+<div class="desc">
+<p>Beagle / Feist</p>
+<p>9 years 6 months</p>
+</div>
+</div>
+</div>
+
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>L21-048 Phoenix</h3>
+</div>
+<img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16737/16737193/78319970_500x743.jpg"
+onerror="this.onerror=null; this.src='images/altphoto.jpg';" class="rounded">
+<div class="desc">
+<p>German Shepherd Dog</p>
+<p>12 years 1 month</p>
+</div>
+</div>
+</div>
+
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>CP21-038 Milo</h3>
+</div>
+<img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16704/16704460/77982185_256x321.jpg"
+onerror="this.onerror=null; this.src='images/altphoto.jpg';" class="rounded">
+<div class="desc">
+<p></p>
+<p>1 year 5 months</p>
+</div>
+</div>
+</div>
+
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>CP21-037 Moo Moo</h3>
+</div>
+<img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16689/16689835/77848528_500x506.jpg"
+onerror="this.onerror=null; this.src='images/altphoto.jpg';" class="rounded">
+<div class="desc">
+<p>American Pit Bull Terrier</p>
+<p>3 years 3 months</p>
+</div>
+</div>
+</div>
+
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>CP21-029 Elsa</h3>
+</div>
+<img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16682/16682935/78747158_500x790.jpg"
+onerror="this.onerror=null; this.src='images/altphoto.jpg';" class="rounded">
+<div class="desc">
+<p>Labrador Retriever / Collie</p>
+<p>1 year 5 months</p>
+</div>
+</div>
+</div>
+
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>CP21-036 Eli</h3>
+</div>
+<img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16671/16671485/77674401_444x960.jpg"
+onerror="this.onerror=null; this.src='images/altphoto.jpg';" class="rounded">
+<div class="desc">
+<p>Pit Bull Terrier</p>
+<p>3 years 6 months</p>
+</div>
+</div>
+</div>
+
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>CP21-018 Allister</h3>
+</div>
+<img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16559/16559656/77002060_451x896.jpg"
+onerror="this.onerror=null; this.src='images/altphoto.jpg';" class="rounded">
+<div class="desc">
+<p>American Pit Bull Terrier</p>
+<p>3 years 3 months</p>
+</div>
+</div>
+</div>
+
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>CP21-011 Annabelle</h3>
+</div>
+<img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16544/16544170/78628504_500x551.jpg"
+onerror="this.onerror=null; this.src='images/altphoto.jpg';" class="rounded">
+<div class="desc">
+<p>Black Mouth Cur</p>
+<p>4 years 4 months</p>
+</div>
+</div>
+</div>
+
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>CP21-009 Max</h3>
+</div>
+<img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16526/16526673/76822694_500x666.jpg"
+onerror="this.onerror=null; this.src='images/altphoto.jpg';" class="rounded">
+<div class="desc">
+<p>Rat Terrier</p>
+<p>13 years 3 months</p>
+</div>
+</div>
+</div>
+
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>CP21-002 Jessi & Chester</h3>
+</div>
+<img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16446/16446522/76480902_500x500.jpg"
+onerror="this.onerror=null; this.src='images/altphoto.jpg';" class="rounded">
+<div class="desc">
+<p>Labrador Retriever / Rottweiler</p>
+<p>5 years 4 months</p>
+</div>
+</div>
+</div>
+
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>L20-301 Venus</h3>
+</div>
+<img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16307/16307598/77243253_500x502.jpg"
+onerror="this.onerror=null; this.src='images/altphoto.jpg';" class="rounded">
+<div class="desc">
+<p>Yellow Labrador Retriever / Staffordshire Bull Terrier</p>
+<p> 8 months</p>
+</div>
+</div>
+</div>
+
+<div class="item Available">
+<div class="content">
+<div class="title">
+<h3>L20-326 Nutmeg</h3>
+</div>
+<img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16277/16277684/78052133_500x594.jpg"
+onerror="this.onerror=null; this.src='images/altphoto.jpg';" class="rounded">
+<div class="desc">
+<p>Labrador Retriever</p>
+<p>2 years 10 months</p>
+</div>
+</div>
+</div>
+
+
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>CP21-054 Ranger - Fun Loving Pug - URGENT</h3>
+</div>
+<img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16830/16830261/78994635_500x666.jpg"
+onerror="this.onerror=null; this.src='images/altphoto.jpg';" class="rounded">
+<div class="desc">
+<p>Pug / Labrador Retriever</p>
+<p>5 years 0 months</p>
+</div>
+</div>
+</div>
+
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>CP21-043 Lilith & Ruby</h3>
+</div>
+<img src=""
+onerror="this.onerror=null; this.src='images/altphoto.jpg';" class="rounded">
+<div class="desc">
+<p>Border Collie / Boxer</p>
+<p>3 years 0 months</p>
+</div>
+</div>
+</div>
+
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>CP21-044 Sampson</h3>
+</div>
+<img src=""
+onerror="this.onerror=null; this.src='images/altphoto.jpg';" class="rounded">
+<div class="desc">
+<p>Australian Shepherd / Labrador Retriever</p>
+<p>11 years 0 months</p>
+</div>
+</div>
+</div>
+
+<div class="item Hold">
+<div class="content">
+<div class="title">
+<h3>L21-052 Blake</h3>
+</div>
+<img src=""
+onerror="this.onerror=null; this.src='images/altphoto.jpg';" class="rounded">
+<div class="desc">
+<p>Australian Cattle Dog/Blue Heeler / Labrador Retriever</p>
+<p>5 years 0 months</p>
+</div>
+</div>
+</div>
+
+
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>CP21-051 Gremlin</h3>
+</div>
+<img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16788/16788319/78787796_493x369.jpg"
+onerror="this.onerror=null; this.src='images/altphoto.jpg';" class="rounded">
+<div class="desc">
+<p>Chihuahua / Dachshund</p>
+<p>5 years 5 months</p>
+</div>
+</div>
+</div>
+
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>CP21-040 Kikkoman</h3>
+</div>
+<img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16717/16717779/78098786_500x993.jpg"
+onerror="this.onerror=null; this.src='images/altphoto.jpg';" class="rounded">
+<div class="desc">
+<p>Shiba Inu</p>
+<p>4 years 1 month</p>
+</div>
+</div>
+</div>
+
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>L21-009 Pumpkin</h3>
+</div>
+<img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16420/16420457/76350490_500x375.jpg"
+onerror="this.onerror=null; this.src='images/altphoto.jpg';" class="rounded">
+<div class="desc">
+<p>Boston Terrier</p>
+<p>13 years 4 months</p>
+</div>
+</div>
+</div>
+
+<div class="item Pending">
+<div class="content">
+<div class="title">
+<h3>L21-007 Bo</h3>
+</div>
+<img src=""
+onerror="this.onerror=null; this.src='images/altphoto.jpg';" class="rounded">
+<div class="desc">
+<p>Dachshund</p>
+<p>6 years 4 months</p>
+</div>
+</div>
+</div>
+
+
+<div class="item Adopted">
+<div class="content">
+<div class="title">
+<h3>L21-056 Arlo</h3>
+</div>
+<img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16806/16806688/78819226_500x375.jpg"
+onerror="this.onerror=null; this.src='images/altphoto.jpg';" class="rounded">
+<div class="desc">
+<p>Labrador Retriever</p>
+<p> 2 months</p>
+</div>
+</div>
+</div>
+
+
+
+
+
+<!-- END GRID -->
+</div>
+
+<script src="https://kit.fontawesome.com/4e0f85110e.js" crossorigin="anonymous"></script>
+</body>
+</html>
