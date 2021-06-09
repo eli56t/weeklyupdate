@@ -23,7 +23,7 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	margin-right: auto;
+	
 	}
 
 article, aside, details, figcaption, figure,
@@ -36,8 +36,7 @@ footer, header, hgroup, menu, nav, section {
 	 by Chris Coyier
 	 http://css-tricks.com
 */
-* { margin: 0; padding: 0; }
-body { font: 14px Georgia, serif; }
+
 
 article, aside, figure, footer, header, hgroup,
 menu, nav, section { display: block; }
@@ -45,14 +44,14 @@ menu, nav, section { display: block; }
   display: block;
    font-family: 'Arvo';
 		color: #ed786a;
-			text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);		
+		text-shadow: 1px 1px grey;	
   }
 .tails{
   position: relative;
   width: 100%;
   height: 100%;
   display: block;
-  
+  padding: 0 25px 0 25px;
 }
 .full-height{
   min-height: 100vh;
@@ -316,7 +315,7 @@ iframe {
   pointer-events: none;
   background: none;
   width: 100%;
-  padding: 0 30px 0 30px;
+  padding: 0 25px 0 25px;
   border: none;
 }
 /* -----  ----- */
@@ -345,18 +344,10 @@ body {
 
 	body {
 		background: #f0f0f0;
+		text-shadow: 1px 1px grey;	
 	}
 
-		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
-			-moz-animation: none !important;
-			-webkit-animation: none !important;
-			-ms-animation: none !important;
-			animation: none !important;
-			-moz-transition: none !important;
-			-webkit-transition: none !important;
-			-ms-transition: none !important;
-			transition: none !important;
-		}
+	
 
 	body, input, select {
 		font-family: 'Arvo';
@@ -364,6 +355,7 @@ body {
 		color: #777;
 		line-height: 1.65em;
 		font-size: 15pt;
+		
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -437,7 +429,6 @@ body {
 		list-style: disc;
 		padding-left: 1em;
 		
-
 }
 	
 
@@ -490,25 +481,7 @@ body {
 				margin-left: 0;
 			}
 
-/* Divided */
 
-	ul.divided {
-		list-style: none;
-		padding-left: 0;
-	}
-
-		ul.divided li {
-			border-top: solid 2px #e5e5e5;
-			padding-left: 0;
-			margin: 0 0 0 0;
-			padding: 2.5em 0 0 0;
-		}
-
-			ul.divided li:first-child {
-				border-top: 0;
-				margin-top: 0;
-				padding-top: 0;
-			}
 .columnA {
   flex: 30%;
   }
@@ -522,9 +495,7 @@ body {
 
 /* Box */
 
-	.no-sidebar .box.post > header {
-		text-align: center;
-	}
+	
 
 	.box.excerpt .date {
 		background: #878787;
@@ -539,6 +510,7 @@ body {
 		letter-spacing: 2px;
 		padding: 0.25em 1em 0.25em 1em;
 		margin: 0 0 2.5em 0;
+		text-shadow: 1px 1px black;	
 		}
 
 
@@ -552,7 +524,7 @@ body {
 /* Header */
 
 	#header {
-		position: relative;
+		
 		position: relative;
 		background: #fff;
 		text-align: center;
@@ -569,7 +541,7 @@ body {
 			font-family: 'Arvo';
 			font-weight: 700;
 			color: #ed786a;
-			text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
+			text-shadow: .5px .5px grey;	
 			font-size: 3em;
 			letter-spacing: 8px;
 		}
