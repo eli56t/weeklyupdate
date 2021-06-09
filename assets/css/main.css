@@ -101,7 +101,7 @@ menu, nav, section { display: block; }
   background-image: url("image4.jpg");
 }
 .checkbox.fifth + label{
-  background-image: url("image5.jpg");
+  background-image: url("image5.JPG");
 }
 .checkbox.sixth + label{
   background-image: url("image6.jpg");
@@ -199,7 +199,7 @@ ul li:nth-child(4) {
   background-image: url("image4.jpg");
 }
 ul li:nth-child(5) {
-  background-image: url("image5.jpg");
+  background-image: url("image5.JPG");
 }
 ul li:nth-child(6) {
   background-image: url("image6.jpg");
