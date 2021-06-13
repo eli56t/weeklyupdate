@@ -46,7 +46,7 @@ menu, nav, section { display: block; }
   }
 .tails{
   position: relative;
-    z-index: 0;
+  float: left;
   width: 100%;
   height: 100%;
   display: block;
