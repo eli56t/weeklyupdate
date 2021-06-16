@@ -16,7 +16,7 @@ form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
+section, summary, time, mark, audio, video, {
 	margin: 1px;
 	padding: 0px;
 	border: 0;
@@ -47,7 +47,14 @@ menu, nav, section { display: block; }
 .section{
   position: relative;
   width: 100%;
-  display: block;
+ 
+}
+.home {
+background:none;
+text-decoration: none;
+border: none;
+font-size:30px
+padding: 5px;
 }
 .full-height{
   
@@ -313,8 +320,7 @@ iframe {
 body {
 	line-height: 1;
 	min-height: -webkit-fill-available;
-	background: #f0f0f0;
-		text-shadow: 1px 1px grey;	
+	text-shadow: 1px 1px grey;	
 }
 
 
@@ -475,7 +481,7 @@ body {
 		font-size: 0.85em;
 		letter-spacing: 2px;
 		padding: 0.25em 0.35em 0.25em 0.35em;
-		margin: 30px 0 10px .5px;
+		margin: 10px 0 5px .5px;
 		text-shadow: 1px 1px black;	
 		}
 
@@ -491,7 +497,7 @@ body {
 
 	#header {
 		
-		position: relative;
+		position: inherit;
 		background: #fff;
 		text-align: center;
 		border-bottom: solid 2px #e5e5e5;
@@ -500,7 +506,7 @@ body {
 	}
 
 		#header > .container {
-			padding: 4em 0 1em 0;
+			padding: 1em 0 1em 0;
 			
 		}
 
@@ -521,7 +527,7 @@ body {
 			text-transform: uppercase;
 			font-weight: 400;
 			
-			margin: 2.5em 0 0 0;
+			
 			font-size: 0.85em;
 			
 			text-align: center;
@@ -839,7 +845,7 @@ body {
 	/* Header */
 
 			#header > .container {
-				padding: 4em 0 1em 0;
+				padding: 1em 0 1em 0;
 			}
 
 			#header h1 {
@@ -1308,7 +1314,7 @@ body {
 		/* Header */
 
 			#header > .container {
-				padding: 4em 0 1em 0;
+				padding: 1em 0 1em 0;
 			}
 
 			 h1 {
@@ -1626,7 +1632,7 @@ body {
 
 			#content > section,
 			#content > article {
-				margin: 3em 0 0 0;
+				margin: 0em 0 0 0;
 				padding: 3em 0 0 0;
 			}
 

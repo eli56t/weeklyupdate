@@ -1,3 +1,31 @@
+
+<!DOCTYPE html>
+<!--
+        Strongly Typed by HTML5 UP
+        html5up.net | @ajlkn
+        Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+<head>
+
+  <title>CVRR</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <meta charset="utf-8">
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700");
 
@@ -16,7 +44,7 @@ form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
+section, summary, time, mark, audio, video, {
 	margin: 1px;
 	padding: 0px;
 	border: 0;
@@ -42,12 +70,19 @@ menu, nav, section { display: block; }
   display: block;
    font-family: 'Arvo';
 		color: #ed786a;
-			
+		text-shadow: 1px 1px grey;	
   }
 .section{
   position: relative;
   width: 100%;
-  display: block;
+ 
+}
+.home {
+background:none;
+text-decoration: none;
+border: none;
+font-size:30px
+padding: 5px;
 }
 .full-height{
   
@@ -66,53 +101,81 @@ menu, nav, section { display: block; }
 .checkbox:checked + label,
 .checkbox:not(:checked) + label{
   position: relative;
-  
   cursor: pointer;
-  margin: 4px;
+  margin: 12px;
   text-align: center;
-  
+  color: white;
+  font-family: 'Arvo', sans-serif;
+  font-size: 20px;
+  outline: 5px black;
+  color: white;
+  text-shadow: 1px 2px black;
+  box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.84);
   display: inline-block;
-  width: 70px;
-  height: 70px;
+  width: 130px;
+  height: 130px;
   border: 3px solid #bdc3c7;
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  background-image: url("image1.jpg");
-  animation: border-transform 6s linear infinite alternate forwards;
+  background-image: url("https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16868/16868101/79340754_500x375.jpg");
+ animation: border-transform 6s linear infinite alternate forwards;
     -webkit-animation-play-state: paused;
     -moz-animation-play-state: paused;
     animation-play-state: paused;
 }
-.checkbox.scnd + label{
-  background-image: url("image2.jpg");
+.label {
+  display: block;
+  padding-left: 15px;
+  text-indent: -15px;
 }
-.checkbox.thrd + label{
-  background-image: url("image3.jpg");
-}
-.checkbox.foth + label{
-  background-image: url("image4.jpg");
-}
+
+.checkbox.second + label{
+  background-image: url("https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16867/16867947/79266742_500x506.jpg");}
+.checkbox.third + label{
+  background-image: url("https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16848/16848328/79139923_500x666.jpg");}
+.checkbox.fourth + label{
+  background-image: url("https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16830/16830261/79393105_368x500.jpg");}
 .checkbox.fifth + label{
-  background-image: url("image5.jpg");
-}
+  background-image: url("https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16825/16825714/78967966_320x240.jpg");}
 .checkbox.sixth + label{
-  background-image: url("image6.jpg");
-}
-.checkbox.svth + label{
-  background-image: url("image7.jpg");
-}
-.checkbox.eigth + label{
-  background-image: url("image8.jpg");
-}
+  background-image: url("https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16737/16737193/78319970_500x743.jpg");}
+.checkbox.seventh + label{
+  background-image: url("https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16704/16704460/77982185_256x321.jpg");}
+.checkbox.eighth + label{
+  background-image: url("https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16682/16682935/78747158_500x790.jpg");}
 .checkbox.ninth + label{
-  background-image: url("image9.jpg");
-}
+  background-image: url("https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16671/16671485/77674399_500x500.jpg");}
 .checkbox.tenth + label{
-  background-image: url("image10.jpg");
-}
+  background-image: url("https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16544/16544170/78628511_500x387.jpg");}
+.checkbox.eleventh + label{
+  background-image: url("https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16526/16526673/76822694_500x666.jpg");}
+.checkbox.twelfth + label{
+  background-image: url("https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16446/16446522/76480902_500x500.jpg");}
+.checkbox.thirteenth + label{
+  background-image: url("https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16307/16307598/77243253_500x502.jpg");}
+.checkbox.fourteenth + label{
+  background-image: url("https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16277/16277684/78052133_500x594.jpg");}
+.checkbox.fifteenth + label{
+  background-image: url("https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16751/16751386/79428677_500x666.jpg");}
+.checkbox.sixteenth + label{
+  background-image: url("https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16863/16863187/79234637_500x790.jpg");}
+.checkbox.seventeenth + label{
+  background-image: url("images/altphoto.jpg");}
+.checkbox.eighteenth + label{
+  background-image: url("images/altphoto.jpg");}
+.checkbox.nineteenth + label{
+  background-image: url("images/altphoto.jpg");}
+.checkbox.twentieth + label{
+  background-image: url("images/altphoto.jpg");}
+.checkbox.twenty-first + label{
+  background-image: url("https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16717/16717779/78098786_500x993.jpg");}
+.checkbox.twenty-second + label{
+  background-image: url("https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16420/16420457/76350490_500x375.jpg");}
+.checkbox.twenty-third + label{
+  background-image: url("images/altphoto.jpg");}
 
 .checkbox:checked + label{
   box-shadow: 0 8px 25px 0 rgba(16,39,112,.3);
@@ -313,8 +376,7 @@ iframe {
 body {
 	line-height: 1;
 	min-height: -webkit-fill-available;
-	background: #f0f0f0;
-		
+	text-shadow: 1px 1px grey;	
 }
 
 
@@ -339,7 +401,8 @@ body {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		
+		font-weight: 600;
+		text-transform: uppercase;
 		
 	}
 
@@ -474,7 +537,7 @@ body {
 		font-size: 0.85em;
 		letter-spacing: 2px;
 		padding: 0.25em 0.35em 0.25em 0.35em;
-		margin: 30px 0 10px .5px;
+		margin: 5px 0 50px 5px;
 		text-shadow: 1px 1px black;	
 		}
 
@@ -490,11 +553,11 @@ body {
 
 	#header {
 		
-		position: relative;
+		position: inherit;
 		background: #fff;
 		text-align: center;
-		border: 0;
-		
+		border-bottom: solid 2px #e5e5e5;
+		box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #e5e5e5;
 		top-padding: 1px;
 	}
 
@@ -516,7 +579,15 @@ body {
 				border: 0;
 			}
 
-	
+		#header p {
+			text-transform: uppercase;
+			font-weight: 400;
+			
+			
+			font-size: 0.85em;
+			
+			text-align: center;
+		}
 
 /* Nav */
 
@@ -694,11 +765,11 @@ body {
 						width: 60px;
 						height: 40px;
 						background: rgba(232, 232, 232, 0.9);
-						
+						border-radius: 4px;
 						position: absolute;
 						left: 5px;
 						top: 5px;
-						
+						box-shadow: 0.125em 0.125em 0 0 rgba(0, 0, 0, 0.15);
 						text-align: center;
 						line-height: 40px;
 						font-size: 18px;
@@ -1041,7 +1112,7 @@ body {
 	/* Header */
 
 			#header > .container {
-				padding: 1em 0 1em 0;
+				padding: 4em 0 1em 0;
 			}
 
 			#header h1 {
@@ -1392,11 +1463,11 @@ body {
 						width: 60px;
 						height: 40px;
 						background: rgba(232, 232, 232, 0.9);
-						
+						border-radius: 4px;
 						position: absolute;
 						left: 5px;
 						top: 5px;
-						
+						box-shadow: 0.125em 0.125em 0 0 rgba(0, 0, 0, 0.15);
 						text-align: center;
 						line-height: 40px;
 						font-size: 18px;
@@ -1513,6 +1584,7 @@ body {
 	@media screen and (max-width: 736px) {
 
 		/* Basic */
+		
 
 			body, input, textarea, select {
 				font-size: 11pt;
@@ -1561,7 +1633,7 @@ body {
 		/* Header */
 
 			#header > .container {
-				padding: 1em 0 1em 0;
+				padding: 4em 0 1em 0;
 			}
 
 			#header h1 {
@@ -1617,7 +1689,7 @@ body {
 
 			#content > section,
 			#content > article {
-				margin: 3em 0 0 0;
+				margin: 0em 0 0 0;
 				padding: 3em 0 0 0;
 			}
 
@@ -1655,3 +1727,113 @@ body {
 					margin-left: 0;
 					border-left: 0;
 				}
+</style>
+<body>
+<div class="home">
+<a href="/weeklyupdate/index"><i class="fa fa-bars" style="font-size:40px;color:grey;"></i></a>
+ </div>
+ <section id="header">
+      <div class="container">
+       
+        <!-- Logo -->
+        <h1>Weekly Update</h1>
+  <h2>06/13/2021</h2>
+<!-- Nav -->
+        
+      </div>
+
+    </section><!-- Main -->
+    <section id="main">
+      
+   
+  
+					<article class="box excerpt">
+                <header>
+                  <span class="date">Available</span>
+                </header>
+                </article>
+     <div class="section full-height over-hide px-4 px-sm-2">
+		<div class="container">
+			<div class="row full-height justify-content-center">
+				
+			
+				
+<input class="checkbox first" type="radio" id="slide-1" name="slider" checked/> <label for="slide-1">Jax</label>
+<input class="checkbox second" type="radio" id="slide-2" name="slider" /> <label for="slide-2">Buddy</label>
+<input class="checkbox third" type="radio" id="slide-3" name="slider" /> <label for="slide-3">Mallie</label>
+<input class="checkbox fourth" type="radio" id="slide-4" name="slider" /> <label for="slide-4">Ranger</label>
+<input class="checkbox fifth" type="radio" id="slide-5" name="slider" /> <label for="slide-5">Bristol</label>
+<input class="checkbox sixth" type="radio" id="slide-6" name="slider" /> <label for="slide-6">Phoenix</label>
+<input class="checkbox seventh" type="radio" id="slide-7" name="slider" /> <label for="slide-7">Milo</label>
+<input class="checkbox eighth" type="radio" id="slide-8" name="slider" /> <label for="slide-8">Elsa</label>
+<input class="checkbox ninth" type="radio" id="slide-9" name="slider" /> <label for="slide-9">Eli</label>
+<input class="checkbox tenth" type="radio" id="slide-10" name="slider" /> <label for="slide-10">Annabelle</label>
+<input class="checkbox eleventh" type="radio" id="slide-11" name="slider" /> <label for="slide-11">Max</label>
+<input class="checkbox twelfth" type="radio" id="slide-12" name="slider" /> <label for="slide-12">Jessi & Chester</label>
+<input class="checkbox thirteenth" type="radio" id="slide-13" name="slider" /> <label for="slide-13">Venus</label>
+<input class="checkbox fourteenth" type="radio" id="slide-14" name="slider" checked/> <label for="slide-14">Nutmeg</label>
+		</div>
+		</div>
+		</div>	          
+				 
+	<article class="box excerpt">
+                <header>
+                  <span class="date">Hold</span>
+                </header>
+                </article>
+     <div class="section full-height over-hide px-4 px-sm-0">
+		<div class="container">
+			<div class="row full-height justify-content-center" >
+				
+			
+				
+<input class="checkbox fifteenth" type="radio" id="slide-15" name="slider" checked/> 
+<label for="slide-15">Blake</label>
+<input class="checkbox sixteenth" type="radio" id="slide-16" name="slider" checked/> <label for="slide-16">Jax</label>
+<input class="checkbox seventeenth" type="radio" id="slide-17" name="slider" checked/> <label for="slide-17">Jena pup 1</label>
+<input class="checkbox eighteenth" type="radio" id="slide-18" name="slider" checked/> <label for="slide-18">Jena pup 2</label>
+<input class="checkbox nineteenth" type="radio" id="slide-19" name="slider" checked/> <label for="slide-19">Pirate</label>
+<input class="checkbox twentieth" type="radio" id="slide-20" name="slider" checked/> <label for="slide-20">Max</label>
+		</div>
+		</div>
+		</div>	  
+		
+			<article class="box excerpt">
+                <header>
+                  <span class="date">Pending</span>
+                </header>
+                </article>
+     <div class="section full-height over-hide px-4 px-sm-0">
+		<div class="container">
+			<div class="row full-height justify-content-center">
+				
+			
+				
+<input class="checkbox twenty-first" type="radio" id="slide-21" name="slider" checked/> <label for="slide-21">Kikkoman</label>
+<input class="checkbox twenty-second" type="radio" id="slide-22" name="slider" checked/> <label for="slide-22">Pumpkin</label>
+<input class="checkbox twenty-third" type="radio" id="slide-23" name="slider" checked/> <label for="slide-23">Bo</label>
+		</div>
+		</div>
+		</div>      			 
+      
+  <!-- Footer -->
+
+       
+      <div id="copyright">
+        <div> CVRR All rights reserved.</div>
+        <div>Design: <a href="http://html5up.net">HTML5 UP</a></div>
+      
+    </div>
+    
+    </section>
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script> 
+  <script src="assets/js/jquery.dropotron.min.js"></script> 
+  <script src="assets/js/browser.min.js"></script> 
+  <script src="assets/js/breakpoints.min.js"></script> 
+  <script src="assets/js/util.js"></script> 
+ 
+ <script src="https://kit.fontawesome.com/4e0f85110e.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
