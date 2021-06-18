@@ -12,11 +12,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/main.css">
   <meta charset="utf-8">
-  
- 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 </head>
 <body>
-  
+  <div style = "text-align:center;">
     <!-- Header -->
     <section id="header">
       <div class="container">
@@ -83,14 +83,14 @@
   
 					<article class="box excerpt">
                 <header>
-                  <span class="date">Happy Tails!</span>
+                  <span class="tails">Happy Tails!</span>
                 </header>
                 </article>
                
-                 <div class="section full-height over-hide px-4 px-sm-0">
+                 <div class="section">
 		<div class="container">
-			<div class="row full-height justify-content-center">
-				<div class="col-lg-10 col-xl-8 align-self-center padding-tb">
+			<div class="row">
+				
 					<div class="section mx-auto text-center slider-height-padding">
 			          	<input class="checkbox frst" type="radio" id="slide-1" name="slider" checked/>
 			          	<label for="slide-1"></label>
@@ -112,6 +112,10 @@
 			          	<label for="slider-9"></label>
 			          	<input class="checkbox tenth" type="radio" name="slider" id="slider-10"/>
 			          	<label for="slider-10"></label>
+			          	<input class="checkbox eleventh" type="radio" name="slider" id="slider-11"/>
+			          	<label for="slider-11"></label>
+			          	<input class="checkbox twelth" type="radio" name="slider" id="slider-12"/>
+			          	<label for="slider-12"></label>
 			          	
 			          	
 						<ul>
@@ -145,6 +149,12 @@
 						    <li>
 								<span>Bear</span>
 						    </li>
+						    <li>
+								<span>Jasper</span>
+						    </li>
+						    <li>
+								<span></span>
+						    </li>
 					    </ul>
 				    </div>
 				    </div>
@@ -152,19 +162,97 @@
 				    </div>
 				    </div>
 			
-      
+      <div class="row">
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c1">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                             <i class="fas fa-cat"  style="font-size:70px;color:rgb(217, 217, 217, .8);"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>476</h2>
+                                                <span>Cat Adoptions</span><br>
+                                                <span>2016-2020</span>
+                                            </div>
+                                        </div>
+                                        <div class="overview-chart">
+                                            <canvas id="catadoptions"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c2">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="fas fa-dog" style="font-size:70px;color:rgb(217, 217, 217, .8);"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>905</h2>
+                                                <span>Dog Adoptions</span><br>
+                                                <span>2016-2020</span>
+                                            </div>
+                                        </div>
+                                        <div class="overview-chart">
+                                            <canvas id="dogadoptions"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c3">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="fas fa-trailer"style="font-size:70px;color:rgb(217, 217, 217, .8);"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>701</h2>
+                                                <span>TNR Cats</span><br>
+                                                <span>2016-2021</span>
+                                            </div>
+                                        </div>
+                                        <div class="overview-chart">
+                                            <canvas id="tnr"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c4">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="fas fa-users"style="font-size:70px;color:rgb(217, 217, 217, .8);"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>100</h2>
+                                                <span>Volunteers</span>
+                                                <br>
+                                                <span>Today</span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="overview-chart">
+                                            <canvas id="vols"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
       
   <!-- Footer -->
+  
 
-  <iframe  src="https://airtable.com/embed/shrKnqmIvqrPwBpIU?layout=card" 
-         height="133"></iframe>
        
       <div id="copyright">
         <div> CVRR All rights reserved.</div>
         <div>Design: <a href="http://html5up.net">HTML5 UP</a></div>
       
     </div>
-    
+    </div>
     </section>
   <!-- Scripts -->
   <script src="assets/js/jquery.min.js"></script> 
@@ -175,5 +263,235 @@
   <script src="assets/js/main.js"></script>
  <script src="https://kit.fontawesome.com/4e0f85110e.js" crossorigin="anonymous"></script>
 
+<script>
+var xValues = [2016,2017,2018,2019,2020];
+
+new Chart("catadoptions", {
+  type: "line",
+  
+  data: {
+    labels: xValues,
+
+    datasets: [{ 
+    label: '',
+      data: [10,96,94,137,139],
+    borderColor: "rgb(166, 166, 166, .8)",
+      fill: true,
+      borderWidth: 4,
+      tension: .3
+    }, ]
+  },
+  
+ options: {
+    legend: {display: false},
+    maintainAspectRatio: false,
+
+    
+    title: {
+      display: true,
+     
+      fontColor: 'white',
+      fontSize: 16,
+    },
+    scales: {
+        xAxes: [{
+          gridLines: {
+              display: false
+          },
+          ticks: {
+                    beginAtZero:true,
+                    fontColor: 'rgba(0, 0, 0, 0)',
+                    fontSize: 16,
+                },
+                }],
+        yAxes: [{
+          gridLines: {
+              display: false
+          },
+          ticks: {
+                    fontColor: 'rgba(0, 0, 0,0)',
+                   
+                    
+                },
+                
+                
+          }],
+    }
+  }
+});
+</script>
+<script>
+var xValues = [2019,2020,2021];
+
+new Chart("tnr", {
+  type: "line",
+  
+  data: {
+    labels: xValues,
+
+    datasets: [{ 
+    label: '',
+      data: [154,290,257],
+       borderColor: "rgb(166, 166, 166, .8)",
+      fill: true,
+      borderWidth: 4,
+      tension: .3
+    }, ]
+  },
+  
+ options: {
+    legend: {display: false},
+    maintainAspectRatio: false,
+
+    
+    title: {
+      display: true,
+     
+      fontColor: 'white',
+      fontSize: 16,
+    },
+    scales: {
+        xAxes: [{
+          gridLines: {
+              display: false
+          },
+          ticks: {
+                    beginAtZero:true,
+                    fontColor: 'rgba(0, 0, 0, 0)',
+                    fontSize: 16,
+                },
+                }],
+        yAxes: [{
+          gridLines: {
+              display: false
+          },
+          ticks: {
+                    fontColor: 'rgba(0, 0, 0, 0)',
+                   
+                    
+                },
+                
+                
+          }],
+    }
+  }
+});
+</script>
+<script>
+var xValues = [2016,2017,2018,2019,2020];
+
+new Chart("dogadoptions", {
+  type: "line",
+ 
+  data: {
+    labels: xValues,
+
+    datasets: [{ 
+    label: '',
+      data: [178,146,116,164,301],
+      borderColor: "rgb(166, 166, 166, .8)",
+      fill: true,
+      borderWidth: 4,
+      tension: .3
+    }, ]
+  },
+  
+ options: {
+    legend: {display: false},
+    maintainAspectRatio: false,
+
+    
+    title: {
+      display: true,
+     
+      fontColor: 'white',
+      fontSize: 16,
+    },
+    scales: {
+        xAxes: [{
+          gridLines: {
+              display: false
+          },
+          ticks: {
+                    beginAtZero:true,
+                    fontColor: 'rgba(0, 0, 0, 0)',
+                    fontSize: 16,
+                },
+                }],
+        yAxes: [{
+          gridLines: {
+              display: false
+          },
+          ticks: {
+                    fontColor: 'rgba(0, 0, 0, 0)',
+                   beginAtZero: true
+                    
+                },
+                
+                
+          }],
+    }
+  }
+});
+</script>
+<script>
+var xValues = [2016,2017,2018,2019,2020,2021];
+
+new Chart("vols", {
+  type: "line",
+  
+  data: {
+    labels: xValues,
+
+    datasets: [{ 
+    label: '',
+      data: [29,42,64,70,89,100],
+       borderColor: "rgb(166, 166, 166, .8)",
+      fill: true,
+      borderWidth: 4,
+      tension: .3
+    }, ]
+  },
+  
+ options: {
+    legend: {display: false},
+    maintainAspectRatio: false,
+
+    
+    title: {
+      display: true,
+     
+      fontColor: 'white',
+      fontSize: 16,
+    },
+    scales: {
+        xAxes: [{
+          gridLines: {
+              display: false
+          },
+          ticks: {
+                    beginAtZero:true,
+                    fontColor: 'rgba(0, 0, 0, 0)',
+                    fontSize: 16,
+                },
+                }],
+        yAxes: [{
+          gridLines: {
+              display: false
+          },
+          ticks: {
+                    fontColor: 'rgba(0, 0, 0, 0)',
+                    
+                   
+                    
+                },
+                
+                
+          }],
+    }
+  }
+});
+</script>
+</script>
 </body>
 </html>
