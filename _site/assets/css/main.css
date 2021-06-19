@@ -283,7 +283,7 @@ padding: 5px;
   background-image: url("image10.jpg");
 }
 .checkbox.eleventh + label{
-  background-image: url("Jasper.jpg");
+  background-image: url("jasper1.jpg");
 }
 .checkbox.twelth + label{
   background-image: url("image12.jpg");
@@ -384,7 +384,7 @@ ul li:nth-child(10) {
   background-image: url("image10.jpg");
 }
 ul li:nth-child(11) {
-  background-image: url("Jasper.jpg");
+  background-image: url("jasper1.jpg");
 }
 ul li:nth-child(12) {
   background-image: url("image12.jpg");
