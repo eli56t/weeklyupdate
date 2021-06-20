@@ -8,12 +8,12 @@
 <head>
 
   <title>CVRR</title>
-  
+  <link rel="icon" href="logo_transparent.png" sizes="196×196" type="image/png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/main.css">
   <meta charset="utf-8">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
   <div style = "text-align:center;">
@@ -32,6 +32,7 @@
                 <a>Past Updates</a> 
                 <a>Cats</a>
                 <ul>
+                <li><a href="cats061321.html">6/13/21</a></li>
                 <li><a href="layouts/cats060621.html">6/06/21</a></li>
                 <li><a href="layouts/cats053021.html">5/30/21</a></li>
                  <li><a href="layouts/cats052221.html">5/22/21</a></li> 
@@ -42,6 +43,7 @@
             
             		<a>Dogs</a>
             		<ul>
+            		<li><a href="dogs061321.html">6/13/21</a></li>
             		<li><a href="layouts/dogs060621.html">6/06/21</a></li>
                   <li><a href="layouts/dogs053021.html">5/30/21</a></li>
                    <li><a href="layouts/dogs052221.html">5/22/21</a></li> 
@@ -61,18 +63,18 @@
       <div class="container">
     <article class="box excerpt">
                 <header>
-                  <span class="date">June 13 2021 Posts</span>
+                  <span class="date">June 20 2021 Posts</span>
                 </header>
                 <div class="rowA">
                   <div class="columnA">
                     <div style="text-align:center">
-                      <a href="cats061321.html"><i class="fas fa-cat"  style="font-size:70px;color:#666699;"></i></a>
+                      <a href="cats062021.html"><i class="fas fa-cat"  style="font-size:70px;color:#666699;"></i></a>
                       <span class="my-text">Cats</span>
                     </div>
                   </div>
                   <div class="columnA">
                     <div style="text-align:center">
-                      <a href="dogs061321.html"><i class="fas fa-dog" style="font-size:70px;color:#009999;"></i></a>
+                      <a href="dogs062021.html"><i class="fas fa-dog" style="font-size:70px;color:#009999;"></i></a>
                     <span class="my-text">Dogs</span>
                     </div>
                   </div>
@@ -163,12 +165,12 @@
 				    </div>
 			
       <div class="row">
-                            <div class="col-sm-6 col-lg-3">
+                            <div class="col-12 col-md-6 col-lg-3">
                                 <div class="overview-item overview-item--c1">
                                     <div class="overview__inner">
                                         <div class="overview-box clearfix">
                                             <div class="icon">
-                                             <i class="fas fa-cat"  style="font-size:70px;color:rgb(217, 217, 217, .8);"></i>
+                                             <i class="fas fa-cat" style="color:rgb(217, 217, 217, .8);"></i>
                                             </div>
                                             <div class="text">
                                                 <h2>476</h2>
@@ -182,12 +184,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-lg-3">
+                            <div class="col-12 col-md-6 col-lg-3">
                                 <div class="overview-item overview-item--c2">
                                     <div class="overview__inner">
                                         <div class="overview-box clearfix">
                                             <div class="icon">
-                                                <i class="fas fa-dog" style="font-size:70px;color:rgb(217, 217, 217, .8);"></i>
+                                                <i class="fas fa-dog" style="color:rgb(217, 217, 217, .8);"></i>
                                             </div>
                                             <div class="text">
                                                 <h2>905</h2>
@@ -201,12 +203,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-lg-3">
+                            <div class="col-12 col-md-6 col-lg-3">
                                 <div class="overview-item overview-item--c3">
                                     <div class="overview__inner">
                                         <div class="overview-box clearfix">
                                             <div class="icon">
-                                                <i class="fas fa-trailer"style="font-size:70px;color:rgb(217, 217, 217, .8);"></i>
+                                                <i class="fas fa-trailer"style="color:rgb(217, 217, 217, .8);"></i>
                                             </div>
                                             <div class="text">
                                                 <h2>701</h2>
@@ -220,12 +222,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-lg-3">
+                            <div class="col-12 col-md-6 col-lg-3">
                                 <div class="overview-item overview-item--c4">
                                     <div class="overview__inner">
                                         <div class="overview-box clearfix">
                                             <div class="icon">
-                                                <i class="fas fa-users"style="font-size:70px;color:rgb(217, 217, 217, .8);"></i>
+                                                <i class="fas fa-users"style="color:rgb(217, 217, 217, .8);"></i>
                                             </div>
                                             <div class="text">
                                                 <h2>100</h2>
@@ -278,21 +280,27 @@ new Chart("catadoptions", {
     borderColor: "rgb(166, 166, 166, .8)",
       fill: true,
       borderWidth: 1,
-      tension: .3,
+      
       pointRadius: 10,
     }, ]
   },
   
  options: {
-    legend: {display: false},
-    maintainAspectRatio: false,
-
-    
-    title: {
-      display: true,
-     
-      fontColor: 'white',
-      fontSize: 16,
+ maintainAspectRatio: false,
+layout: {
+            padding: {
+                left: 0,
+                right: 10,
+                top: 9,
+                bottom: 0
+            },
+        },
+   
+    legend: {
+    display: false
+    },
+   title: {
+      display: false,
     },
     scales: {
         xAxes: [{
@@ -301,8 +309,7 @@ new Chart("catadoptions", {
           },
           ticks: {
                     beginAtZero:true,
-                    fontColor: 'rgba(0, 0, 0, 0)',
-                    fontSize: 16,
+                    display: false
                 },
                 }],
         yAxes: [{
@@ -310,12 +317,8 @@ new Chart("catadoptions", {
               display: false
           },
           ticks: {
-                    fontColor: 'rgba(0, 0, 0,0)',
-                   
-                    
-                },
-                
-                
+                    display: false,   
+                },  
           }],
     }
   }
@@ -335,8 +338,8 @@ new Chart("tnr", {
       data: [154,290,257],
        borderColor: "rgb(166, 166, 166, .8)",
       fill: true,
-      borderWidth: 1,
-      tension: .3,
+          borderWidth: 1,
+      
       pointRadius: 10,
     }, ]
   },
@@ -344,13 +347,17 @@ new Chart("tnr", {
  options: {
     legend: {display: false},
     maintainAspectRatio: false,
-
+layout: {
+            padding: {
+                left: 0,
+                right: 10,
+                top: 9,
+                bottom: 0
+            },
+        },
     
     title: {
-      display: true,
-     
-      fontColor: 'white',
-      fontSize: 16,
+      display: false,
     },
     scales: {
         xAxes: [{
@@ -359,8 +366,7 @@ new Chart("tnr", {
           },
           ticks: {
                     beginAtZero:true,
-                    fontColor: 'rgba(0, 0, 0, 0)',
-                    fontSize: 16,
+                    display: false
                 },
                 }],
         yAxes: [{
@@ -368,7 +374,7 @@ new Chart("tnr", {
               display: false
           },
           ticks: {
-                    fontColor: 'rgba(0, 0, 0, 0)',
+                    display: false,
                    
                     
                 },
@@ -402,13 +408,17 @@ new Chart("dogadoptions", {
  options: {
     legend: {display: false},
     maintainAspectRatio: false,
-
+layout: {
+            padding: {
+                left: 0,
+                right: 10,
+                top: 9,
+                bottom: 0
+            },
+        },
     
     title: {
-      display: true,
-     
-      fontColor: 'white',
-      fontSize: 16,
+      display: false
     },
     scales: {
         xAxes: [{
@@ -417,8 +427,7 @@ new Chart("dogadoptions", {
           },
           ticks: {
                     beginAtZero:true,
-                    fontColor: 'rgba(0, 0, 0, 0)',
-                    fontSize: 16,
+                    display: false
                 },
                 }],
         yAxes: [{
@@ -426,7 +435,7 @@ new Chart("dogadoptions", {
               display: false
           },
           ticks: {
-                    fontColor: 'rgba(0, 0, 0, 0)',
+                    display: false,
                    beginAtZero: true
                     
                 },
@@ -452,7 +461,7 @@ new Chart("vols", {
        borderColor: "rgb(166, 166, 166, .8)",
       fill: true,
       borderWidth: 1,
-      tension: .3,
+     
       pointRadius: 10,
     }, ]
   },
@@ -460,13 +469,17 @@ new Chart("vols", {
  options: {
     legend: {display: false},
     maintainAspectRatio: false,
-
+layout: {
+            padding: {
+                left: 0,
+                right: 10,
+                top: 10,
+                bottom: 0
+            },
+        },
     
     title: {
-      display: true,
-     
-      fontColor: 'white',
-      fontSize: 16,
+      display: false
     },
     scales: {
         xAxes: [{
@@ -475,8 +488,7 @@ new Chart("vols", {
           },
           ticks: {
                     beginAtZero:true,
-                    fontColor: 'rgba(0, 0, 0, 0)',
-                    fontSize: 16,
+                    display: false
                 },
                 }],
         yAxes: [{
@@ -484,7 +496,7 @@ new Chart("vols", {
               display: false
           },
           ticks: {
-                    fontColor: 'rgba(0, 0, 0, 0)',
+                    display: false
                     
                    
                     

@@ -84,12 +84,7 @@ section, summary, time, mark, audio, video{
     margin-bottom: 10px;
 }
 
-@media (min-width: 992px) and (max-width: 1519px) {
-    .overview-item {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-}
+
 
 .overview-item--c1 {
     background-image: -moz-linear-gradient(90deg, #3f5efb 0%, #fc466b 100%);
@@ -122,29 +117,42 @@ section, summary, time, mark, audio, video{
 .overview-box .icon {
     display: inline-block;
     vertical-align: top;
-    margin-right: 15px;
+    
 }
 
 .overview-box .icon i {
-    font-size: 60px;
+    
     color: #fff;
 }
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    .overview-box .icon {
-        margin-right: 3px;
-    }
-
-    .overview-box .icon i {
-        font-size: 30px;
+/* -----xlarge----*/
+@media screen and (max-width: 2080px) {
+   
+    .icon {
+        font-size: 5rem;
     }
 }
 
-@media (max-width: 991px) {
-    .overview-box .icon {
-        font-size: 46px;
+/* -----Large-------*/
+@media screen and (max-width: 1280px) {
+    .icon {
+        font-size: 5rem;
     }
 }
+/* -----Medium-------*/
+@media screen and (max-width: 980px) {
+.icon {
+        font-size: 3rem;
+    }
+}
+
+/* Small */
+
+	@media screen and (max-width: 375px) {
+.icon {
+        font-size: 3rem;
+    }
+}
+
 
 .overview-box .text {
     font-weight: 300;
@@ -156,7 +164,7 @@ section, summary, time, mark, audio, video{
     color: #fff;
     font-size: 36px;
     line-height: 1;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 
 .overview-box .text span {
@@ -192,6 +200,7 @@ section, summary, time, mark, audio, video{
 .overview-chart {
     height: 200px;
     position: relative;
+    padding: 0px;
 }
 
 .overview-chart canvas {
