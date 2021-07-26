@@ -300,44 +300,44 @@ padding: 5px;
   box-sizing: border-box;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  background-image: url("image1.jpg");
+  background-image: url("alumni2.jpg");
   animation: border-transform 6s linear infinite alternate forwards;
     -webkit-animation-play-state: paused;
     -moz-animation-play-state: paused;
     animation-play-state: paused;
 }
 .checkbox.scnd + label{
-  background-image: url("image2.jpg");
+  background-image: url("alumni3.jpg");
 }
 .checkbox.thrd + label{
-  background-image: url("image3.jpg");
+  background-image: url("alumni4.jpg");
 }
 .checkbox.foth + label{
-  background-image: url("image4.jpg");
+  background-image: url("alumni5.jpg");
 }
 .checkbox.fifth + label{
-  background-image: url("image5.jpg");
+  background-image: url("alumni6.jpg");
 }
 .checkbox.sixth + label{
-  background-image: url("image6.jpg");
+  background-image: url("alumni7.jpg");
 }
 .checkbox.svth + label{
-  background-image: url("image7.jpg");
+  background-image: url("alumni8.jpg");
 }
 .checkbox.eigth + label{
-  background-image: url("image8.jpg");
+  background-image: url("alumni9.jpg");
 }
 .checkbox.ninth + label{
-  background-image: url("image9.jpg");
+  background-image: url("alumni10.jpg");
 }
 .checkbox.tenth + label{
-  background-image: url("image10.jpg");
+  background-image: url("alumni11.jpg");
 }
 .checkbox.eleventh + label{
   background-image: url("jasper1.jpg");
 }
 .checkbox.twelth + label{
-  background-image: url("image12.jpg");
+  background-image: url("alumni1.jpg");
 }
 
 .checkbox:checked + label{
@@ -385,18 +385,18 @@ ul li {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("image1.jpg");
+  background-image: url("alumni2.jpg");
   border-radius: 50%;
   box-sizing: border-box;
-  font-family: 'Arvo', sans-serif;
+  font-family: 'Helvetica';
   font-weight: 900;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 10px;
   outline: 5px black;
   line-height: 2.7;
   color: white;
   text-shadow: 1px 2px black;
-  writing-mode: vertical-rl;
+  
   opacity: 0;
   pointer-events: none;
   box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.84);
@@ -408,37 +408,37 @@ ul li span {
   mix-blend-mode: normal;
 }
 ul li:nth-child(2) {
-  background-image: url("image2.jpg");
+  background-image: url("alumni3.jpg");
 }
 ul li:nth-child(3) {
-  background-image: url("image3.jpg");
+  background-image: url("alumni4.jpg");
 }
 ul li:nth-child(4) {
-  background-image: url("image4.jpg");
+  background-image: url("alumni5.jpg");
 }
 ul li:nth-child(5) {
-  background-image: url("image5.jpg");
+  background-image: url("alumni6.jpg");
 }
 ul li:nth-child(6) {
-  background-image: url("image6.jpg");
+  background-image: url("alumni7.jpg");
 }
 ul li:nth-child(7) {
-  background-image: url("image7.jpg");
+  background-image: url("alumni8.jpg");
 }
 ul li:nth-child(8) {
-  background-image: url("image8.jpg");
+  background-image: url("alumni9.jpg");
 }
 ul li:nth-child(9) {
-  background-image: url("image9.jpg");
+  background-image: url("alumni10.jpg");
 }
 ul li:nth-child(10) {
-  background-image: url("image10.jpg");
+  background-image: url("alumni11.jpg");
 }
 ul li:nth-child(11) {
   background-image: url("jasper1.jpg");
 }
 ul li:nth-child(12) {
-  background-image: url("image12.jpg");
+  background-image: url("alumni1.jpg");
 }
 
 
