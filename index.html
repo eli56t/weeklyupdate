@@ -10,12 +10,65 @@
   <title>CVRR</title>
   <link rel="icon" href="logo_transparent.png" sizes="196×196" type="image/png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="assets/css/main.css">
+
   <meta charset="utf-8">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+<body onclick="closeNav()">
+<div id="mySidebar" class="sidebar" onclick="event.stopPropagation();">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+  <h2>2021</h2>
+   <button class="dropdown-btn">May
+    <i class="fa fa-caret-down"></i>
+  </button>
+ <div class="dropdown-container">
+    <a href="layouts/catsupdate14.html">Cats 5/2</a>
+    <a href="layouts/catsupdate15.html">Cats 5/9</a>
+    <a href="layouts/2cats051621.html">Cats 5/16</a>
+    <a href="layouts/cats052221.html">Cats 5/22</a>
+    <a href="layouts/cats053021.html">Cats 5/30</a>
+    <a href="layouts/dogsupdate52.html">Dogs 5/2</a>
+    <a href="layouts/dogsupdate59.html">Dogs 5/9</a>
+    <a href="layouts/dogs051621.html">Dogs 5/16</a>
+    <a href="layouts/dogs052221.html">Dogs 5/22</a>
+    <a href="layouts/dogs053021.html">Dogs 5/30</a>
+  </div>
+  <button class="dropdown-btn">June
+    <i class="fa fa-caret-down"></i>
+  </button>
+ <div class="dropdown-container">
+    <a href="layouts/cats060621.html">Cats 6/6</a>
+    <a href="cats061321.html">Cats 6/13</a>
+    <a href="cats062021.html">Cats 6/20</a>
+    <a href="cats062721.html">Cats 6/27</a>
+    <a href="layouts/dogs060621.html">Dogs 6/6</a>
+    <a href="dogs061321.html">Dogs 6/13</a>
+    <a href="dogs062021.html">Dogs 6/20</a>
+    <a href="dogs062721.html">Dogs 6/27</a>
+    
+  </div>
+ <button class="dropdown-btn">July
+    <i class="fa fa-caret-down"></i>
+  </button>
+ <div class="dropdown-container">
+    <a href="cats070421.html">Cats 7/4</a>
+    <a href="cats071121.html">Cats 7/11</a>
+    <a href="cats071821.html">Cats 7/18</a>
+    <a href="cats072521.html">Cats 7/25</a>
+    <a href="dogs070421.html">Dogs 7/4</a>
+    <a href="dogs071121.html">Dogs 7/11</a>
+    <a href="dogs071821.html">Dogs 7/18</a>
+    <a href="dogs072521.html">Dogs 7/25</a>
+    
+  </div>
+</div>
+
+<div id="main">
+   <span onclick="openNav(event)">☰ MENU</span>  
+ </div>
   <div style = "text-align:center;">
     <!-- Header -->
     <section id="header">
@@ -24,67 +77,26 @@
         <h1>Weekly Update</h1>
         <h2>Current Animals in Our Care</h2>
         <!-- Nav -->
-        <nav id="nav">
-          <ul>
-            <li><a class="icon solid fa-home" href="index.html"><span>Home</span></a></li>
-            <li>
-              <div style="margin-left: 2em">
-                <a>Past Updates</a> 
-                <a>Cats</a>
-                <ul>
-                 <li><a href="cats071821.html">7/18/21</a></li>
-                <li><a href="cats071121.html">7/11/21</a></li>
-                <li><a href="cats070421.html">7/4/21</a></li>
-                <li><a href="cats062721.html">6/27/21</a></li>
-                <li><a href="cats062021.html">6/20/21</a></li>
-                <li><a href="cats061321.html">6/13/21</a></li>
-                <li><a href="layouts/cats060621.html">6/06/21</a></li>
-                <li><a href="layouts/cats053021.html">5/30/21</a></li>
-                 <li><a href="layouts/cats052221.html">5/22/21</a></li> 
-                  <li><a href="layouts/2cats051621.html">5/16/21</a></li> 
-                  <li><a href="layouts/catsupdate15.html">5/9/21</a></li>
-                  <li><a href="layouts/catsupdate14.html">5/2/21</a></li>
-                   </ul>
-            
-            		<a>Dogs</a>
-            		<ul>
-            		<li><a href="dogs071821.html">7/18/21</a></li>
-            		<li><a href="dogs071121.html">7/11/21</a></li>
-            		<li><a href="dogs070421.html">7/4/21</a></li>
-            		<li><a href="dogs062721.html">6/27/21</a></li>
-            		<li><a href="dogs062021.html">6/20/21</a></li>
-            		<li><a href="dogs061321.html">6/13/21</a></li>
-            		<li><a href="layouts/dogs060621.html">6/06/21</a></li>
-                  <li><a href="layouts/dogs053021.html">5/30/21</a></li>
-                   <li><a href="layouts/dogs052221.html">5/22/21</a></li> 
-                   <li><a href="layouts/dogs051621.html">5/16/21</a></li> 
-                   <li><a href="layouts/dogsupdate59.html">5/9/21</a></li>
-                   <li><a href="layouts/dogsupdate52.html">5/2/21</a></li>
-                   </ul>
-                   
-            		 
-              </div>
-            </li>
-          </ul>
-        </nav>
+       
       </div>
+
     </section><!-- Main -->
     <section id="main">
       <div class="container">
     <article class="box excerpt">
                 <header>
-                  <span class="date">July 25 2021 Posts</span>
+                  <span class="date">August 1 2021 Posts</span>
                 </header>
                 <div class="rowA">
                   <div class="columnA">
                     <div style="text-align:center">
-                      <a href="cats072521.html"><i class="fas fa-cat"  style="font-size:70px;color:#666699;"></i></a>
+                      <a href="cats080121.html"><i class="fas fa-cat"  style="font-size:70px;color:#666699;"></i></a>
                       <span class="my-text">Cats</span>
                     </div>
                   </div>
                   <div class="columnA">
                     <div style="text-align:center">
-                      <a href="dogs072521.html"><i class="fas fa-dog" style="font-size:70px;color:#009999;"></i></a>
+                      <a href="dogs080121.html"><i class="fas fa-dog" style="font-size:70px;color:#009999;"></i></a>
                     <span class="my-text">Dogs</span>
                     </div>
                   </div>
@@ -265,6 +277,7 @@
       
     </div>
     </div>
+    
     </section>
   <!-- Scripts -->
   <script src="assets/js/jquery.min.js"></script> 
@@ -272,8 +285,40 @@
   <script src="assets/js/browser.min.js"></script> 
   <script src="assets/js/breakpoints.min.js"></script> 
   <script src="assets/js/util.js"></script> 
-  <script src="assets/js/main.js"></script>
+  
  <script src="https://kit.fontawesome.com/4e0f85110e.js" crossorigin="anonymous"></script>
+ <script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+ <script>
+function openNav(event) {
+      event.stopPropagation();
+      document.getElementById("mySidebar").style.width = "230px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.getElementsByTagName('body')[0];
+      }
+
+  /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+  function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+      document.getElementsByTagName('body')[0];
+      }
+</script>
 
 <script>
 var xValues = [2016,2017,2018,2019,2020];
