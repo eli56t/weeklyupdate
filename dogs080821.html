@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<!--
+        Strongly Typed by HTML5 UP
+        html5up.net | @ajlkn
+        Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+<head>
+
+  <title>CVRR</title>
+  <link rel="icon" href="logo_transparent.png" sizes="196×196" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <meta charset="utf-8">
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700");
+
+.home {
+background:none;
+text-decoration: none;
+border: none;
+font-size:30px
+padding: 5px;
+margin: 10px;
+}
+/* HIDE RADIO */
+[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+ 
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+   position: relative;
+  cursor: pointer;
+  box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.84);
+   display: block;
+   margin: 7.5px;
+  width: 170px;
+  height: 180px;
+  border: 3px solid #bdc3c7;
+  object-fit: cover;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+   animation: border-transform 6s linear infinite alternate forwards;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+label {
+    display: inline-block;
+    text-align: center;
+  font-family: 'Arvo', sans-serif;
+  font-size: 20px;
+  
+  color: #333333;
+  
+}
+
+
+@keyframes border-transform{
+  0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+  14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+  28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+  42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+  56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+  70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+  84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+}
+
+/* -----  ----- */
+body {
+	line-height: 1;
+	min-height: -webkit-fill-available;
+	
+}
+
+
+/* Basic */
+
+	html {
+		box-sizing: border-box;
+	}
+
+	*, *:before, *:after {
+		box-sizing: inherit;
+	}
+
+
+	body, input, select {
+		font-family: 'Arvo';
+		font-weight: 300;
+		color: #777;
+		line-height: 1.65em;
+		font-size: 15pt;
+		
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 600;
+		text-transform: uppercase;
+		
+	}
+
+
+
+	h2 {
+		font-size: 1em;
+		font-weight: 400;
+		letter-spacing: 4px;
+		margin: 0 0 1.5em 0;
+		line-height: 1.325em;
+	}
+
+	h3 {
+		font-size: 1em;
+		letter-spacing: 2px;
+		margin: 0 0 1.25em 0;
+		display: inline-block;
+	}
+
+	
+	.box.excerpt .date {
+		background: #878787;
+		color: #fff;
+		font-weight: 400;
+		text-transform: uppercase;
+		border-radius: 10px;
+		border: 0;
+		box-shadow: 0.125em 0.175em 0 0 rgba(0, 0, 0, 0.125);
+		display: inline-block;
+		font-size: 0.85em;
+		letter-spacing: 2px;
+		padding: 0.25em 0.35em 0.25em 0.35em;
+		margin: 5px 0 20px 30px;
+		text-shadow: 1px 1px black;	
+		}
+
+
+/* Header */
+
+	#header {
+		
+		position: inherit;
+		background: #fff;
+		text-align: center;
+		border-bottom: solid 2px #e5e5e5;
+		box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #e5e5e5;
+		top-padding: 1px;
+	}
+
+		#header > .container {
+			padding: 1em 0 1em 0;
+			
+		}
+
+		#header h1 {
+			font-family: 'Arvo';
+			font-weight: 200;
+			color: #ed786a;
+			text-shadow: .5px .5px grey;	
+			font-size: 2em;
+			letter-spacing: 8px;
+		}
+
+	
+
+
+/* Footer */
+
+	#footer {
+		border-top: solid 2px #e5e5e5;
+		text-align: center;
+		margin-top: 0em;
+		padding-top: 4em;}
+
+
+		#footer h2 {
+			text-align: center;
+		}
+
+/* Copyright */
+
+	#copyright {
+		border-top: solid 2px #e5e5e5;
+		text-align: center;
+		margin-top: 6em;
+		padding-top: 4em;
+	}
+	
+
+
+
+</style>
+<body>
+<div class="home">
+<a href="/weeklyupdate/index"><i class="fa fa-bars" style="font-size:40px;color:grey;"></i></a>
+ </div>
+ <section id="header">
+      <div class="container">
+       
+        <!-- Logo -->
+        <h1>Weekly Update</h1>
+  <h2>08/08/2021</h2>
+<!-- Nav -->
+        
+      </div>
+
+    </section><!-- Main -->
+   
+ <!--     <article class="box excerpt">
+                <header>
+                  <span class="date">New Intakes</span>
+                </header>
+                </article>
+     <div class="row justify-content-center" >
+<label>   <input type="radio" name="pic" value="small"><img src="images/altphoto.jpg">Loki<br>3 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/altphoto.jpg">Puppy 1<br>9 Days</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/altphoto.jpg">Puppy 2<br>9 Days</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/altphoto.jpg">Puppy 3<br>9 Days</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/altphoto.jpg">Puppy 4<br>9 Days</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/altphoto.jpg">Hazel<br>6 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17067/17067111/80769923_500x666.jpg">Boxer mix pup 1<br>9 Days</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17067/17067113/80769926_500x666.jpg">Boxer mix pup 2<br>9 Days</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/altphoto.jpg">Boxer mix pup 3<br>9 Days</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/altphoto.jpg">Boxer mix pup 4<br>9 Days</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/altphoto.jpg">Boxer mix pup 5<br>9 Days</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/altphoto.jpg">Boxer mix pup 6<br>9 Days</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/altphoto.jpg">Boxer mix pup 7<br>9 Days</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/altphoto.jpg">Boxer mix pup 8<br>9 Days</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/altphoto.jpg">Boxer mix pup 9<br>9 Days</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/altphoto.jpg">Boxer mix pup 10<br>9 Days</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/altphoto.jpg">Boxer mix pup 11<br>9 Days</label>
+	</div>	     -->     
+   
+  
+					<article class="box excerpt">
+                <header>
+                  <span class="date">Available</span>
+                </header>
+                </article>
+     <div class="row justify-content-center" >
+			
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16277/16277684/79749720_500x624.jpg">Nutmeg<br>3 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16307/16307598/77243253_500x502.jpg">Venus<br>10 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16544/16544170/78628511_500x387.jpg">Annabelle<br>4 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16671/16671485/77674399_500x500.jpg">Eli<br>3 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16737/16737193/78319970_500x743.jpg">Phoenix<br>12 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16848/16848328/79139923_500x666.jpg">Mallie<br>7 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16863/16863179/80445472_500x589.jpg">Pirate<br>5 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16868/16868101/79340754_500x375.jpg">Jax<br>7 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16922/16922163/80315557_500x499.jpg">Midget<br>13 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16970/16970522/80539736_427x569.jpg">Artie<br>-4 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16978/16978954/80359259_500x684.jpg">Cassie<br>1 year</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17018/17018813/80874325_500x740.jpg">Smokey<br>2 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17040/17040687/80534966_500x666.jpg">Cleo<br>4 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17040/17040701/80534949_500x666.jpg">Khali<br>3 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17059/17059855/80906451_500x375.jpg">Hazel<br>6 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17085/17085720/80883848_500x666.jpg">Penny<br>5 Months</label>
+	</div>	          
+				 
+	<article class="box excerpt">
+                <header>
+                  <span class="date">Hold</span>
+                </header>
+                </article>
+    
+			<div class="row justify-content-center" >
+				
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16442/16442914/76456848_500x637.jpg">Lando<br>5 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16751/16751386/79428677_500x666.jpg">Blake<br>5 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16863/16863187/79234637_500x790.jpg">Jax<br>2 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/altphoto.jpg">Max<br>2 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16944/16944181/79804639_500x646.jpg">Ella Mae<br>4 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/altphoto.jpg">Cardi<br>4 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16997/16997303/80168183_500x236.jpg">Jobie<br>2 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17023/17023583/80388527_500x567.jpg">Eloise<br>2 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/altphoto.jpg">Loki<br>3 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/altphoto.jpg">Abbie<br>21 Days</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/altphoto.jpg">Zeeva<br>21 Days</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/altphoto.jpg">McGee<br>21 Days</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17067/17067111/80769923_500x666.jpg">Boxer mix pup 1<br>16 Days</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17067/17067113/80769926_500x666.jpg">Boxer mix pup 2<br>16 Days</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17067/17067117/80797035_500x666.jpg">Boxer mix pup 3<br>16 Days</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17067/17067118/80797037_500x666.jpg">Boxer mix pup 4<br>16 Days</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/altphoto.jpg">Boxer mix pup 5<br>16 Days</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/altphoto.jpg">Boxer mix pup 6<br>16 Days</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/altphoto.jpg">Boxer mix pup 7<br>16 Days</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/altphoto.jpg">Boxer mix pup 8<br>16 Days</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/altphoto.jpg">Boxer mix pup 9<br>16 Days</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/altphoto.jpg">Boxer mix pup 10<br>16 Days</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/altphoto.jpg">Boxer mix pup 11<br>16 Days</label>
+
+		</div>	  
+		
+			<article class="box excerpt">
+                <header>
+                  <span class="date">Pending</span>
+                </header>
+                </article>
+                
+    <div class="row justify-content-center" >
+
+<label>   <input type="radio" name="pic" value="small"><img src="images/altphoto.jpg">Bo<br>6 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16420/16420457/76350490_500x375.jpg">Pumpkin<br>13 years</label>
+
+		</div> 
+		
+		
+		<article class="box excerpt">
+                <header>
+                  <span class="date">Adopted</span>
+                </header>
+                </article>
+                
+    <div class="row justify-content-center" >    
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17061/17061443/80707158_500x697.jpg">Rucker<br>1 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17061/17061446/80707174_500x433.jpg">Mark<br>1 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17061/17061449/80707188_500x375.jpg">Bryan<br>1 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17061/17061451/80707198_500x724.jpg">Dean<br>1 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17061/17061454/80707293_500x631.jpg">Jim<br>1 Months</label>
+	</div> 
+		
+	 <!--	<article class="box excerpt">
+                <header>
+                  <span class="date">Courtesy Adoptions</span>
+                </header>
+                </article>
+                
+    <div class="row justify-content-center" >    
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16304/16304919/75720109_386x640.jpg">Stoney<br>1 year</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16526/16526675/76822698_500x666.jpg">Indiana<br>5 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16544/16544168/76916320_375x500.jpg">Molly<br>4 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16788/16788319/78787796_493x369.jpg">Gremlin<br>5 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16825/16825714/78967966_320x240.jpg">Bristol<br>7 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16848/16848316/79139803_500x848.jpg">Loki<br>6 Months</label>
+
+
+	</div> 
+	     -->
+
+                 
+      </div> 
+  <!-- Footer -->
+
+       
+      <div id="copyright">
+        <div> CVRR All rights reserved.</div>
+        <div>Design: <a href="http://html5up.net">HTML5 UP</a></div>
+      
+    </div>
+    
+    </section>
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script> 
+  <script src="assets/js/jquery.dropotron.min.js"></script> 
+  <script src="assets/js/browser.min.js"></script> 
+  <script src="assets/js/breakpoints.min.js"></script> 
+  <script src="assets/js/util.js"></script> 
+ 
+ <script src="https://kit.fontawesome.com/4e0f85110e.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
