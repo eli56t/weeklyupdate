@@ -25,6 +25,24 @@ section, summary, time, mark, audio, video{
 
 	}
 
+html {
+  height: 100vh;
+}
+ 
+body {
+  background: #000;
+  height: 500vh;
+}
+ 
+canvas {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  max-height: 100vh;
+  max-width: 100vw;
+  transform: translate(-50%, -50%);
+}
+
 .sidebar {
   height: 100%;
   width: 0;

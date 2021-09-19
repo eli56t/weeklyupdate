@@ -89,10 +89,10 @@
   </button>
  <div class="dropdown-container">
     <a href="cats090521.html">Cats 9/5</a>
-   
+   <a href="cats091221.html">Cats 9/12</a>
     <br>
      <a href="dogs090521.html">Dogs 9/5</a>
-   
+     <a href="dogs091221.html">Dogs 9/12</a>
   </div>
 </div>
 
@@ -115,18 +115,18 @@
       <div class="container">
     <article class="box excerpt">
                 <header>
-                  <span class="date">September 12 2021 Posts</span>
+                  <span class="date">September 19 2021 Posts</span>
                 </header>
                 <div class="rowA">
                   <div class="columnA">
                     <div style="text-align:center">
-                      <a href="cats091221.html"><i class="fas fa-cat"  style="font-size:70px;color:#666699;"></i></a>
+                      <a href="cats091921.html"><i class="fas fa-cat"  style="font-size:70px;color:#666699;"></i></a>
                       <span class="my-text">Cats</span>
                     </div>
                   </div>
                   <div class="columnA">
                     <div style="text-align:center">
-                      <a href="dogs091221.html"><i class="fas fa-dog" style="font-size:70px;color:#009999;"></i></a>
+                      <a href="dogs091921.html"><i class="fas fa-dog" style="font-size:70px;color:#009999;"></i></a>
                     <span class="my-text">Dogs</span>
                     </div>
                   </div>
@@ -350,6 +350,25 @@ function openNav(event) {
       }
 </script>
 
+<script>
+const canvas = document.getElementById("hero-lightpass");
+const context = canvas.getContext("2d");
+
+const currentFrame = index => (
+  `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${index.toString().padStart(4, '0')}.jpg`
+)
+
+// Set canvas dimensions
+canvas.width=1158;
+canvas.height=770;
+
+// Create, load and draw the image
+const img = new Image()
+img.src = currentFrame(1); // we'll make this dynamic in the next step, for now we'll just load image 1 of our sequence
+img.onload=function(){
+  context.drawImage(img, 0, 0);
+}
+</script>
 <script>
 var xValues = [2016,2017,2018,2019,2020];
 
