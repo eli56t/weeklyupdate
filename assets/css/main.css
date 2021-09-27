@@ -24,6 +24,9 @@ section, summary, time, mark, audio, video{
 	font: inherit;
 
 	}
+	
+
+
 
 .sidebar {
   height: 100%;
@@ -356,7 +359,29 @@ padding: 5px;
   position: absolute;
   left: -9999px;
 }
-.checkbox:checked + label,
+.checkbox:checked + label
+{
+  position: relative;
+  
+  cursor: pointer;
+  margin: 4px;
+  text-align: center;
+  
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-image: url("alumni2.jpg");
+  animation: border-transform 6s linear infinite alternate forwards;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    animation-play-state: paused;
+}
 .checkbox:not(:checked) + label{
   position: relative;
   
