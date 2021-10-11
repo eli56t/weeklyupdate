@@ -1,0 +1,412 @@
+
+<!DOCTYPE html>
+<!--
+        Strongly Typed by HTML5 UP
+        html5up.net | @ajlkn
+        Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+<head>
+
+  <title>CVRR</title>
+  <link rel="icon" href="logo_transparent.png" sizes="196×196" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <meta charset="utf-8">
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700");
+
+.home {
+background:none;
+text-decoration: none;
+border: none;
+font-size:30px
+padding: 5px;
+margin: 10px;
+}
+/* HIDE RADIO */
+[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+ 
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+   position: relative;
+  cursor: pointer;
+  box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.84);
+   display: block;
+   margin: 7.5px;
+  width: 170px;
+  height: 180px;
+  border: 3px solid #bdc3c7;
+  object-fit: cover;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+   animation: border-transform 6s linear infinite alternate forwards;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+label {
+    display: inline-block;
+    text-align: center;
+  font-family: 'Arvo', sans-serif;
+  font-size: 20px;
+  
+  color: #333333;
+  
+}
+	.badge {
+	font-size: 1.1em;
+	}
+
+
+@keyframes border-transform{
+  0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+  14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+  28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+  42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+  56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+  70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+  84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+}
+
+/* -----  ----- */
+body {
+	line-height: 1;
+	min-height: -webkit-fill-available;
+	
+}
+
+
+/* Basic */
+
+	html {
+		box-sizing: border-box;
+	}
+
+	*, *:before, *:after {
+		box-sizing: inherit;
+	}
+
+
+	body, input, select {
+		font-family: 'Arvo';
+		font-weight: 300;
+		color: #777;
+		line-height: 1.65em;
+		font-size: 15pt;
+		
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 600;
+		text-transform: uppercase;
+		
+	}
+
+
+
+	h2 {
+		font-size: 1em;
+		font-weight: 400;
+		letter-spacing: 4px;
+		margin: 0 0 1.5em 0;
+		line-height: 1.325em;
+	}
+
+	h3 {
+		font-size: 1em;
+		letter-spacing: 2px;
+		margin: 0 0 1.25em 0;
+		display: inline-block;
+	}
+
+	
+	.box.excerpt .date {
+		background: #878787;
+		color: #fff;
+		font-weight: 400;
+		text-transform: uppercase;
+		border-radius: 10px;
+		border: 0;
+		box-shadow: 0.125em 0.175em 0 0 rgba(0, 0, 0, 0.125);
+		display: inline-block;
+		font-size: 0.85em;
+		letter-spacing: 2px;
+		padding: 0.25em 0.35em 0.25em 0.35em;
+		margin: 5px 0 20px 30px;
+		text-shadow: 1px 1px black;	
+		}
+
+
+/* Header */
+
+	#header {
+		
+		position: inherit;
+		background: #fff;
+		text-align: center;
+		border-bottom: solid 2px #e5e5e5;
+		box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #e5e5e5;
+		top-padding: 1px;
+	}
+
+		#header > .container {
+			padding: 1em 0 1em 0;
+			
+		}
+
+		#header h1 {
+			font-family: 'Arvo';
+			font-weight: 200;
+			color: #ed786a;
+			text-shadow: .5px .5px grey;	
+			font-size: 2em;
+			letter-spacing: 8px;
+		}
+
+	
+
+
+/* Footer */
+
+	#footer {
+		border-top: solid 2px #e5e5e5;
+		text-align: center;
+		margin-top: 0em;
+		padding-top: 4em;}
+
+
+		#footer h2 {
+			text-align: center;
+		}
+
+/* Copyright */
+
+	#copyright {
+		border-top: solid 2px #e5e5e5;
+		text-align: center;
+		margin-top: 6em;
+		padding-top: 4em;
+	}
+	
+
+
+
+</style>
+<body>
+<div class="home">
+<a href="/weeklyupdate/index"><i class="fa fa-bars" style="font-size:40px;color:grey;"></i></a>
+ </div>
+ <section id="header">
+      <div class="container">
+       
+        <!-- Logo -->
+        <h1>Weekly Update</h1>
+  <h2>10/10/2021</h2>
+<!-- Nav -->
+        
+      </div>
+
+    </section><!-- Main -->
+   
+      
+   
+  
+					<article class="box excerpt">
+                <header>
+                  <span class="date">Available<span class="badge">(55)</span></span>
+                </header>
+                </article>
+     <div class="row justify-content-center">
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16199/16199740/75126031_500x375.jpg">*Mr Kitty & Lil Momma<br>1 year</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16698/16698418/79664785_500x375.jpg">*Mama Bean<br>1 year</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16698/16698434/80455558_500x666.jpg">*Vienna<br>6 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16698/16698457/80787971_500x666.jpg">*Hallobeanie<br>6 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16735/16735034/81467792_500x434.jpg">*Butch<br>4 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16786/16786812/81517088_500x500.jpg">*Dobby<br>5 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16788/16788061/78669358_500x375.jpg">*Tom<br>NaN Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16795/16795615/81426743_500x636.jpg">*Moose<br>6 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16795/16795619/80910057_500x500.jpg">*Gnome<br>6 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16795/16795628/80910170_500x500.jpg">*Moo<br>6 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16805/16805711/81427060_500x683.jpg">*Katniss<br>3 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16805/16805712/81427065_500x687.jpg">*Peeta<br>3 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16845/16845439/82629844_500x625.jpg">*Smitten<br>6 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16848/16848718/79142159_500x666.jpg">*Starbeam<br>6 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16891/16891504/80787527_278x750.jpg">*Marble<br>2 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16891/16891539/79691141_500x624.jpg">*Dolly *(Marble Baby)<br>4 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16891/16891570/81663138_500x550.jpg">*Camilla *(Marble Baby)<br>4 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16891/16891596/81426721_500x669.jpg">*Maggy *(Marble Baby)<br>4 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16891/16891619/81654315_500x800.jpg">*Tiny Tim *(Marble Baby)<br>4 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17092/17092145/82693908_500x370.jpg">*Harley<br>4 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17092/17092186/82694236_500x406.jpg">*Ninja<br>4 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17092/17092204/82694096_500x380.jpg">*Indian *(Indy)<br>4 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17086/17086746/82235790_500x500.jpg">*Krobus<br>3 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17092/17092167/82694210_500x538.jpg">*Suzy *(Suzuki)<br>4 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17092/17092111/82693888_500x482.jpg">*Duke *(Ducati)<br>4 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17000/17000185/81209169_500x569.jpg">*Cecilia<br>6 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17000/17000186/81209156_500x666.jpg">*Ginny<br>6 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17024/17024407/80392738_500x514.jpg">*Cricket<br>9 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17186/17186673/82836607_500x666.jpg">*Elvis<br>2 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17083/17083502/81229218_500x900.jpg">*Sage<br>4 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17109/17109593/82694719_500x375.jpg">*Jupiter<br>3 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17186/17186663/82247519_500x400.jpg">*Kaboodle<br>8 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17186/17186664/82247524_500x375.jpg">*Kit<br>8 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17109/17109591/82694710_500x484.jpg">*Venus<br>3 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17186/17186671/82247506_500x392.jpg">*Squirrel<br>1 year</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17186/17186674/82841676_500x375.jpg">*Priscilla<br>2 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17186/17186675/82836592_480x360.jpg">*Pipsqueak<br>2 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17145/17145715/81386775_500x666.jpg">*Emerald<br>3 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17186/17186676/82841678_328x345.jpg">*Phynx<br>2 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17186/17186677/82841681_500x375.jpg">*Onyx<br>2 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17191/17191450/82653482_500x375.jpg">*Atti<br>4 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17191/17191452/82653495_500x375.jpg">*Bingo<br>4 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17191/17191454/82653487_500x372.jpg">*Karma<br>4 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17191/17191474/81803759_500x676.jpg">*Inky<br>3 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17191/17191475/81828394_500x666.jpg">*Blu<br>3 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17191/17191477/81828375_500x666.jpg">*Austen<br>6 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17191/17191480/81828384_500x666.jpg">*Lady<br>4 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17191/17191481/81828388_500x666.jpg">*Trish<br>4 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17193/17193052/81828406_500x666.jpg">*Virgil<br>4 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17292/17292264/82590837_500x500.jpg">*Mossy<br>9 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17292/17292297/82591110_500x500.jpg">*Brooke<br>5 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17292/17292488/82591587_500x500.jpg">*River<br>5 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17300/17300712/82659816_431x305.jpg">*Larry<br>3 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17300/17300714/82659834_431x323.jpg">*Daryl<br>3 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17300/17300718/82659847_432x489.jpg">*Darlene<br>3 Months</label>
+</div>	 			 
+	<article class="box excerpt">
+                <header>
+                  <span class="date">Hold<span class="badge">(36)</span></span>
+                </header>
+                </article>
+    
+			<div class="row justify-content-center">
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16199/16199881/75126630_500x375.jpg">*Fozzy<br>1 year</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Pippi Longstocking<br>1 year</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Princess Peach<br>1 year</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Tubby<br>3 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17000/17000181/80196073_500x538.jpg">*Harris<br>6 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17149/17149165/81456862_500x375.jpg">Test Cat<br>1 year</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17149/17149165/81456862_500x375.jpg">Test Cat<br>1 year</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Sabrina<br>1 year</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Cinnabar<br>2 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Wallaby<br>2 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Kulan<br>2 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Nyala<br>2 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Sibyl<br>1 year</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Gunther<br>2 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Kramer<br>2 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Wyatt<br>2 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17188/17188521/81803744_500x666.jpg">*Bayley<br>3 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Artemis<br>4 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Olympia<br>4 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Rhodes<br>4 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Hali<br>4 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17191/17191473/81828392_500x666.jpg">*Pinky<br>3 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Tsunami<br>4 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Calypso<br>4 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Hurricane<br>4 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Biscuits<br>5 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Lemming<br>2 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Charcoal<br>3 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Slate<br>3 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Stone<br>3 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Oliver<br>2 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17298/17298937/82651918_500x993.jpg">*Pamplin gray<br>1 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17298/17298938/82651925_500x993.jpg">*Pamplin gray & white<br>1 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17298/17298939/82651927_500x993.jpg">*Pamplin black & white<br>1 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17298/17298922/82651897_500x666.jpg">*Casper<br>1 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17309/17309442/82756586_500x575.jpg">*Mila<br>5 Months</label>
+</div>	  
+		
+			<article class="box excerpt">
+                <header>
+                  <span class="date">Pending<span class="badge">(30)</span></span>
+                </header>
+                </article>
+    <div class="row justify-content-center">
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Moscato<br>1 year</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Freya<br>1 year</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Felix<br>1 year</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16243/16243717/75786737_500x375.jpg">*Kam<br>1 year</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16695/16695011/78345708_500x666.jpg">*Easter Mama<br>3 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16716/16716669/78093346_500x375.jpg">*Spidergirl<br>7 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16716/16716670/78093349_500x375.jpg">*Kia<br>7 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16734/16734730/78250778_500x316.jpg">*Natty<br>7 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16795/16795557/80910002_500x500.jpg">*Smoot<br>6 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16795/16795603/79186927_500x375.jpg">*Tiny Pine Tree<br>6 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16795/16795599/79186781_500x375.jpg">*Violet<br>6 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16795/16795632/80735282_500x666.jpg">*Pockets<br>6 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16814/16814366/79283975_500x1139.jpg">*Tiki<br>5 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16828/16828800/79088772_500x500.jpg">*Dougie<br>1 year</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16857/16857226/79187034_500x805.jpg">*Chai<br>5 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16857/16857229/79187150_500x752.jpg">*London Fog<br>5 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17086/17086742/81742955_500x375.jpg">*Gremlin<br>3 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16981/16981058/80046537_500x497.jpg">*Laverne<br>5 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16981/16981061/80046745_500x375.jpg">*Shirley<br>5 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Gideon<br>2 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17186/17186715/82121661_500x375.jpg">*Blaze<br>4 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Korben<br>5 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*LeeLoo<br>5 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Shakria<br>5 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17190/17190282/81856356_500x666.jpg">*Zeah<br>2 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17190/17190283/81856485_500x666.jpg">*Zurie<br>2 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17190/17190284/81883598_500x666.jpg">*Zarah<br>2 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17190/17190286/81856464_500x375.jpg">*Zeppy<br>2 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16979/16979632/80226055_500x666.jpg">*Courage<br>4 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="https://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17083/17083503/81232085_500x500.jpg">*Thyme<br>4 Months</label>
+</div>    
+		<!-- 
+			<article class="box excerpt">
+                <header>
+                  <span class="date">Transferred<span class="badge">(2)</span></span>
+                </header>
+                </article>
+    <div class="row justify-content-center">
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Sammie<br>2 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="images/cataltphoto.jpg">*Tammy<br>6 Months</label>
+
+		</div>   		 
+      
+  <!-- Footer -->
+
+       
+      <div id="copyright">
+        <div> CVRR All rights reserved.</div>
+        <div>Design: <a href="http://html5up.net">HTML5 UP</a></div>
+      
+    </div>
+    
+    </section>
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script> 
+  <script src="assets/js/jquery.dropotron.min.js"></script> 
+  <script src="assets/js/browser.min.js"></script> 
+  <script src="assets/js/breakpoints.min.js"></script> 
+  <script src="assets/js/util.js"></script> 
+ 
+ <script src="https://kit.fontawesome.com/4e0f85110e.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
