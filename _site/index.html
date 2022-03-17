@@ -148,7 +148,8 @@
                  </div>
                   </article>
                   </div>
-               
+                
+
 
 					<article class="box excerpt">
                 <header>
@@ -240,9 +241,9 @@
                                              <i class="fas fa-cat" style="color:rgb(217, 217, 217, .8);"></i>
                                             </div>
                                             <div class="text">
-                                                <h2>476</h2>
+                                                <h2>665</h2>
                                                 <span>Cat Adoptions</span><br>
-                                                <span>2016-2021</span>
+                                                <span>Since 2016</span>
                                             </div>
                                         </div>
                                         <div class="overview-chart">
@@ -259,9 +260,9 @@
                                                 <i class="fas fa-dog" style="color:rgb(217, 217, 217, .8);"></i>
                                             </div>
                                             <div class="text">
-                                                <h2>905</h2>
+                                                <h2>1034</h2>
                                                 <span>Dog Adoptions</span><br>
-                                                <span>2016-2021</span>
+                                                <span>Since 2016</span>
                                             </div>
                                         </div>
                                         <div class="overview-chart">
@@ -278,9 +279,10 @@
                                                 <i class="fas fa-trailer"style="color:rgb(217, 217, 217, .8);"></i>
                                             </div>
                                             <div class="text">
-                                                <h2>701</h2>
-                                                <span>TNR Cats</span><br>
-                                                <span>2016-2021</span>
+                                                <h2>764</h2>
+                                                <span>TNR Cats</span>
+                                                <br>
+                                                <span>Since 2019</span>
                                             </div>
                                         </div>
                                         <div class="overview-chart">
@@ -297,12 +299,12 @@
                                                 <i class="fas fa-users"style="color:rgb(217, 217, 217, .8);"></i>
                                             </div>
                                             <div class="text">
-                                                <h2>100</h2>
+                                                <h2>113</h2>
                                                 <span>Volunteers</span>
                                                 <br>
                                                 <span>Today</span>
                                             </div>
-                                            
+                                          
                                         </div>
                                         <div class="overview-chart">
                                             <canvas id="vols"></canvas>
@@ -566,7 +568,7 @@ layout: {
 });
 </script>
 <script>
-var xValues = [2016,2017,2018,2019,2020,2021];
+var xValues = [2016,2017,2018,2019,2020,2021,222];
 
 new Chart("vols", {
   type: "line",
@@ -576,7 +578,7 @@ new Chart("vols", {
 
     datasets: [{ 
     label: '',
-      data: [29,42,64,70,89,100],
+      data: [29,42,64,70,89,100, 113],
        borderColor: "rgb(166, 166, 166, .8)",
       fill: true,
       borderWidth: 1,
