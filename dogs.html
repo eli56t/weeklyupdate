@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!--
+        Strongly Typed by HTML5 UP
+        html5up.net | @ajlkn
+        Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+<head>
+
+  <title>CVRR</title>
+  <link rel="icon" href="logo_transparent.png" sizes="196×196" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <meta charset="utf-8">
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700");
+
+.home {
+background:none;
+text-decoration: none;
+border: none;
+font-size:30px
+padding: 5px;
+margin: 10px;
+}
+/* HIDE RADIO */
+[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+ 
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+   position: relative;
+  cursor: pointer;
+  box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.84);
+   display: block;
+   margin: 7.5px;
+  width: 170px;
+  height: 180px;
+  border: 3px solid #bdc3c7;
+  object-fit: cover;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+   animation: border-transform 6s linear infinite alternate forwards;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+label {
+    display: inline-block;
+    text-align: center;
+  font-family: 'Arvo', sans-serif;
+  font-size: 20px;
+  
+  color: #333333;
+  
+}
+
+
+@keyframes border-transform{
+  0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+  14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+  28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+  42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+  56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+  70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+  84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+}
+
+/* -----  ----- */
+body {
+	line-height: 1;
+	min-height: -webkit-fill-available;
+	
+}
+
+
+/* Basic */
+
+	html {
+		box-sizing: border-box;
+	}
+
+	*, *:before, *:after {
+		box-sizing: inherit;
+	}
+
+
+	body, input, select {
+		font-family: 'Arvo';
+		font-weight: 300;
+		color: #777;
+		line-height: 1.65em;
+		font-size: 15pt;
+		
+		
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 600;
+		text-transform: uppercase;
+		
+	}
+
+
+
+	h2 {
+		font-size: 1em;
+		font-weight: 400;
+		letter-spacing: 4px;
+		margin: 0 0 1.5em 0;
+		line-height: 1.325em;
+	}
+
+	h3 {
+		font-size: 1em;
+		letter-spacing: 2px;
+		margin: 0 0 1.25em 0;
+		display: inline-block;
+	}
+
+	
+	.box.excerpt .date {
+		background: #878787;
+		color: #fff;
+		font-weight: 400;
+		text-transform: uppercase;
+		border-radius: 10px;
+		border: 0;
+		box-shadow: 0.125em 0.175em 0 0 rgba(0, 0, 0, 0.125);
+		display: inline-block;
+		font-size: 0.85em;
+		letter-spacing: 2px;
+		padding: 0.25em 0.35em 0.25em 0.35em;
+		margin: 5px 0 20px 30px;
+		text-shadow: 1px 1px black;	
+		}
+
+
+/* Header */
+
+	#header {
+		
+		position: inherit;
+		background: #fff;
+		text-align: center;
+		border-bottom: solid 2px #e5e5e5;
+		box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #e5e5e5;
+		top-padding: 1px;
+	}
+
+		#header > .container {
+			padding: 1em 0 1em 0;
+			
+		}
+
+		#header h1 {
+			font-family: 'Arvo';
+			font-weight: 200;
+			color: #ed786a;
+			text-shadow: .5px .5px grey;	
+			font-size: 2em;
+			letter-spacing: 8px;
+		}
+
+	.badge {
+	font-size: 1.1em;
+	}
+
+
+/* Footer */
+
+	#footer {
+		border-top: solid 2px #e5e5e5;
+		text-align: center;
+		margin-top: 0em;
+		padding-top: 4em;}
+
+
+		#footer h2 {
+			text-align: center;
+		}
+
+/* Copyright */
+
+	#copyright {
+		border-top: solid 2px #e5e5e5;
+		text-align: center;
+		margin-top: 6em;
+		padding-top: 4em;
+		
+	}
+
+
+
+
+</style>
+<body>
+<div class="home">
+<a href="/weeklyupdate/index"><i class="fa fa-bars" style="font-size:40px;color:grey;"></i></a>
+ </div>
+ <section id="header">
+      <div class="container">
+       
+        <!-- Logo -->
+        <h1>Current Foster Dogs</h1>
+  <h2>New faces and Recent Adoptions</h2>
+<!-- Nav -->
+        
+      </div>
+
+    </section><!-- Main -->
+ 
+  
+					<article class="box excerpt">
+                <header>
+                  <span class="date">Available<span class="badge">(13)</span></span>
+                </header>
+                </article>
+     <div class="row justify-content-center" >
+			
+<label>   <input type="radio" name="pic" value="small"><img src="http://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17848/17848831/86900193_500x700.jpg">Barkley <br>1 year</label>
+<label>   <input type="radio" name="pic" value="small"><img src="http://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16737/16737193/78319970_500x743.jpg">Phoenix<br>12 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="http://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17339/17339296/83283313_500x751.jpg">Oso<br>10 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="http://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17594/17594661/85165750_500x666.jpg">Van<br>14 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="http://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17681/17681512/86085642_500x710.jpg">Goose<br>4 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="http://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17689/17689141/86598068_500x666.jpg">Abby<br>1 year</label>
+
+<label>   <input type="radio" name="pic" value="small"><img src="http://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17818/17818663/86726874_320x240.jpg">Wallace<br>5 Weeks</label>
+<label>   <input type="radio" name="pic" value="small"><img src="http://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17818/17818665/86726877_320x240.jpg">Gromit<br>5 Weeks</label>
+<label>   <input type="radio" name="pic" value="small"><img src="http://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17822/17822496/86752743_500x619.jpg">Lily<br>4 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="http://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17822/17822976/86754074_500x888.jpg">Coco<br>7 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="http://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17832/17832680/86872642_500x502.jpg">Minnie<br>5 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="http://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17840/17840847/86856460_500x666.jpg">Razor<br>10 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="http://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17840/17840851/86856491_500x375.jpg">Pepper<br>10 years</label>
+	</div>	          
+				 
+  
+	
+		
+		<article class="box excerpt">
+                <header>
+                  <span class="date">Adopted!<span class="badge">(11)</span></span>
+                </header>
+                </article>
+                
+    <div class="row justify-content-center" >    
+<label>   <input type="radio" name="pic" value="small"><img src="http://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17067/17067122/82691705_500x375.jpg">Marvel<br>2 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="http://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17067/17067123/82721054_500x375.jpg">Pledge<br>2 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="http://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/16997/16997303/85955622_500x666.jpg">Jobie<br>2 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="http://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17480/17480635/84145263_500x647.jpg">Max<br>2 years</label>
+<label>   <input type="radio" name="pic" value="small"><img src="http://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17525/17525565/84525882_500x666.jpg">Bernie<br>1 year</label>
+<label>   <input type="radio" name="pic" value="small"><img src="http://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17632/17632592/85717044_500x562.jpg">Tess<br>4 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="http://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17632/17632593/85717047_500x666.jpg">Hubble<br>4 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="http://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17632/17632594/85717043_500x666.jpg">Webb<br>4 Months</label>
+<label>   <input type="radio" name="pic" value="small"><img src="http://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17632/17632614/85843965_500x665.jpg">Oasis<br>10 years</label>
+
+
+<label>   <input type="radio" name="pic" value="small"><img src="http://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17681/17681514/86085552_500x905.jpg">Squirrel<br>4 Months</label>
+
+<label>   <input type="radio" name="pic" value="small"><img src="http://s3.amazonaws.com/filestore.rescuegroups.org/7975/pictures/animals/17767/17767022/86462866_500x673.jpg">Chance<br>8 years</label>
+
+		
+
+
+                 
+      </div> 
+  <!-- Footer -->
+
+       
+        <div id="copyright">
+        <div> CVRR All rights reserved.</div>
+        <div>Design: <a href="http://html5up.net">HTML5 UP</a></div>
+      
+    </div>
+    
+    </section>
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script> 
+  <script src="assets/js/jquery.dropotron.min.js"></script> 
+  <script src="assets/js/browser.min.js"></script> 
+  <script src="assets/js/breakpoints.min.js"></script> 
+  <script src="assets/js/util.js"></script> 
+ 
+ <script src="https://kit.fontawesome.com/4e0f85110e.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
