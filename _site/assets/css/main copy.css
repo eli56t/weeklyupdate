@@ -26,7 +26,84 @@ section, summary, time, mark, audio, video{
 	}
 	
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
 
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(156, 156, 156, .8);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a, .dropdown-btn, h2 {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+   border-style: none;
+   border: 0;
+   
+}
+
+.sidebar a:hover {
+  border-style: none;
+  border: 0;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+   border-style: none;
+   border: 0;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  border: 0;
+  
+   border-style: none;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  border: 0;
+}
 
 #main {
   transition: margin-left .5s;
